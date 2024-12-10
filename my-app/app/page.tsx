@@ -18,10 +18,10 @@ export default function AboutMe() {
       src: "/jayden.jpg",
     },
     {
-      quote: "Solve it or dodge it",
+      quote: "My favourite hobby's prolly getting rich.",
       name: "Yu Ting",
-      designation: "viber",
-      src: "/yuting.png",
+      designation: "Professional TTS generator, part-time yapper/innovator",
+      src: "/yuting.jpg",
     },
     {
       quote: "Ask for money, get advice. Ask for advice, get money twice.",
