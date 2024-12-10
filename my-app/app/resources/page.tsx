@@ -17,7 +17,7 @@ export default function AboutMe() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <Image src= "NCADA_PNG_logo_RGB_2.PNG" alt="NCADA logo"/>
+                <Image src= "/NCADA_PNG_logo_RGB_2.PNG" alt="NCADA logo" width = "360" height = "360"/>
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
                     National Council Against Drug Abuse (NCADA)
@@ -39,6 +39,8 @@ export default function AboutMe() {
                 <Image 
                     src="/cnb_logo.png" 
                     alt="CNB logo"
+                    width = "360"
+                    height= "360"
                 />
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
@@ -58,7 +60,7 @@ export default function AboutMe() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <Image src= "HPB.png" alt="HPB logo"/>
+                <Image src= "/HPB.png" alt="HPB logo" width = "360" height = "360"/>
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
                     Health Promotion Board (HPB)
@@ -77,7 +79,7 @@ export default function AboutMe() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <Image src="counselling Online.png" alt="CSS logo"/>
+                <Image src="/counselling Online.png" alt="CSS logo" width = "360" height = "360"/>
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
                     Counseling and Support Services
@@ -96,7 +98,7 @@ export default function AboutMe() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <Image src="SAMH-logo-web.png" alt="SAMH logo"/>
+                <Image src="/SAMH-logo-web.png" alt="SAMH logo" width = "360" height = "360"/>
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
                     Singapore Association for Mental Health (SAMH)
@@ -115,7 +117,7 @@ export default function AboutMe() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <Image src= "Online support.png" alt="In person support"/>
+                <Image src= "/Online support.png" alt="In person support" width = "360" height = "360"/>
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
                     Online and In-Person Support
@@ -134,7 +136,7 @@ export default function AboutMe() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <Image src= "SANA.png" alt="SANA logo"/>
+                <Image src= "/SANA.png" alt="SANA logo" width = "360" height = "360"/>
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
                     The Singapore Anti-Narcotics Association (SANA)
