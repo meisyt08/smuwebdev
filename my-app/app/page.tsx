@@ -4,7 +4,7 @@ import { Testimonial } from "@/components/ui/animated-testimonials";
 const AnimatedTestimonials = dynamic(
   () => import('@/components/ui/animated-testimonials').then((mod) => mod.AnimatedTestimonials),
   {
-    loading: () => <p>Loading testimonials...</p>, 
+    loading: () => <p> </p>, 
     ssr: false, 
   }
 );
@@ -15,7 +15,7 @@ export default function AboutMe() {
       quote: "I don't know. Play Moomoo.io.",
       name: "Jayden",
       designation: "Absolute Beast of a Gamer",
-      src: "/1.png",
+      src: "/jayden.jpg",
     },
     {
       quote: "When life gives you lemons, make lemonade.",
@@ -30,10 +30,10 @@ export default function AboutMe() {
       src: "/javen.jpeg",
     },
     {
-      quote: "Blah blah blah",
+      quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       name: "Ivyn",
-      designation: "Blah blah",
-      src: "/1.png",
+      designation: "What The Cup Fan",
+      src: "/ivyn.jpeg",
     },
   ];
   return (
