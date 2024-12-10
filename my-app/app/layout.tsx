@@ -30,7 +30,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NavigationBar></NavigationBar>
+        <div className="absolute top-0 left-0 w-full z-50 bg-inherit">
+          <NavigationBar />
+        </div>
         {children}
         <Switch />
       </body>
