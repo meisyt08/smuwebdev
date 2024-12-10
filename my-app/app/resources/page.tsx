@@ -37,7 +37,7 @@ export default function AboutMe() {
             </CardHeader>
             <CardContent>
                 <Image 
-                    src="/cnb_logo.png" 
+                    src="/cnb-logo.png" 
                     alt="CNB logo"
                     width = "360"
                     height= "360"
@@ -79,7 +79,7 @@ export default function AboutMe() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <Image src="/counselling Online.png" alt="CSS logo" width = "360" height = "360"/>
+                <Image src="/Councelling-Online.png" alt="CSS logo" width = "360" height = "360"/>
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
                     Counseling and Support Services
@@ -117,7 +117,7 @@ export default function AboutMe() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <Image src= "/Online support.png" alt="In person support" width = "360" height = "360"/>
+                <Image src= "/Online-support.png" alt="In person support" width = "360" height = "360"/>
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
                     Online and In-Person Support
