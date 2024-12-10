@@ -28,13 +28,13 @@ if have free time, can create a tutorial page for how to play the game.
     N: **skip to <part II>**
 4. they're calling you over!! move closer to them? (Y/N)
 5. 
-    Y: you come near them and they show you the tote bag full of colourful sharpies. all your friends are taking one. Janine, your crush(?!), pushes to you the last sharpie. "it's your gift!! take it."
-    N: they come to you anyways and show you the tote bag full of colourful sharpies. all your friends have taken one. Janine, your crush(?!), pushes to you the last sharpie. "it's your gift!! take it."
+    Y: you come near them and they show you the tote bag full of colourful sharpies. all your friends are taking one. Janine pushes to you the last sharpie. "it's your gift!! take it."
+    N: they come to you anyways and show you the tote bag full of colourful sharpies. all your friends have taken one. Janine pushes to you the last sharpie. "it's your gift!! take it."
 6. Will you take the sharpie? Janine is waiting for you... (Y/N)
 7.
     Y: you take the sharpie and stare at it curiously...
     N: you try to refuse but Janine's demeanour changes...she stares at you with slight irritation in her eyes, though her smile stays as she pushes the sharpie into your palms. your heart races. your skin burns.
-8. Janine and the other friends sit around you. Janine pulls out the cap of both of your sharpies, revealing a black metal tip that looks pretty dissimilar from a sharpie...
+8. Janine and your other friends sit around you. Janine pulls out the cap out of both of your sharpies, revealing a black metal tip that looks pretty dissimilar from a sharpie...
 9. To your surprise, everyone around you puts the sharpie to their mouth. Alarmingly, fumes seem to come out of their mouths after taking away the sharpie. Then, flashbacks on lessons about vapes come to mind. You connect the dots...
 10. A hand suddenly wraps around yours, bringing the sharpie in your hands to your mouth... Do you resist? (Y1/N1)
 11.
