@@ -15,7 +15,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
-export function navigationBar(){
+export function NavigationBar(){
     return (
         <NavigationMenu className="flex flex-row justify-between min-w-full list-none h-16 position: sticky top-0 p-5">
             <NavigationMenuItem>
