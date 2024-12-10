@@ -1,7 +1,16 @@
-import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
+import dynamic from 'next/dynamic';
+import { Testimonial } from "@/components/ui/animated-testimonials";
+
+const AnimatedTestimonials = dynamic(
+  () => import('@/components/ui/animated-testimonials').then((mod) => mod.AnimatedTestimonials),
+  {
+    loading: () => <p>Loading testimonials...</p>, 
+    ssr: false, 
+  }
+);
 
 export default function AboutMe() {
-  const testimonials = [
+  const testimonials: Testimonial[] = [
     {
       quote: "I don't know. Play Moomoo.io.",
       name: "Jayden",
