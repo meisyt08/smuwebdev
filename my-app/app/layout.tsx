@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { NavigationBar } from "@/tutorialnav/navbar/nav";
+import { Switch } from "@/components/ui/switch"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,6 +32,7 @@ export default function RootLayout({
       >
         <NavigationBar></NavigationBar>
         {children}
+        <Switch />
       </body>
     </html>
   );

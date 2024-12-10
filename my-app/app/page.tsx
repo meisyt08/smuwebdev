@@ -18,9 +18,9 @@ export default function AboutMe() {
       src: "/jayden.jpg",
     },
     {
-      quote: "When life gives you lemons, make lemonade.",
+      quote: "Solve it or dodge it",
       name: "Yu Ting",
-      designation: "God Tier Coder",
+      designation: "viber",
       src: "/yuting.png",
     },
     {
