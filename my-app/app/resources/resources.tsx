@@ -1,11 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import NCADA from ../lib/Photos/NCADA_PNG_logo_RGB_2.png
-import CNB from @/lib/Photos/cnb_logo.png
-import SANA from @/lib/Photos/SANA.png
-import SAMH from @/lib/Photos/SAMH-logo-web.png
-import HPB from @/lib/Photos/HPB.png
-import counselling from @/lib/Photos/counselling Online.png
-import Online from @/lib/Photos/Online support.png
+import Image from "next/image";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Terminal } from "lucide-react";
 
@@ -23,7 +17,7 @@ export default function AboutMe() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <Image src={NCADA} alt="1"/>
+                <Image src= "NCADA_PNG_logo_RGB_2.PNG" alt="NCADA logo"/>
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
                     National Council Against Drug Abuse (NCADA)
@@ -42,7 +36,10 @@ export default function AboutMe() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <Image src={CNB} alt="1"/>
+                <Image 
+                    src="/cnb_logo.png" 
+                    alt="CNB logo"
+                />
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
                     Central Narcotics Bureau (CNB)
@@ -61,7 +58,7 @@ export default function AboutMe() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <Image src={HPB} alt="1"/>
+                <Image src= "HPB.png" alt="HPB logo"/>
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
                     Health Promotion Board (HPB)
@@ -80,7 +77,7 @@ export default function AboutMe() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <Image src={counselling} alt="1"/>
+                <Image src="counselling Online.png" alt="CSS logo"/>
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
                     Counseling and Support Services
@@ -99,7 +96,7 @@ export default function AboutMe() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <Image src={SAMH} alt="1"/>
+                <Image src="SAMH-logo-web.png" alt="SAMH logo"/>
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
                     Singapore Association for Mental Health (SAMH)
@@ -118,7 +115,7 @@ export default function AboutMe() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <Image src={Online} alt="1"/>
+                <Image src= "Online support.png" alt="In person support"/>
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
                     Online and In-Person Support
@@ -137,7 +134,7 @@ export default function AboutMe() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <Image src={SANA} alt="1"/>
+                <Image src= "SANA.png" alt="SANA logo"/>
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
                     The Singapore Anti-Narcotics Association (SANA)

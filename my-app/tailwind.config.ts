@@ -9,6 +9,7 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
@@ -55,7 +56,16 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		animation: {
+			move: "move 5s linear infinite",
+		  },
+		  keyframes: {
+			move: {
+			  "0%": { transform: "translateX(-200px)" },
+			  "100%": { transform: "translateX(200px)" },
+			},
+		  },
   	}
   },
   plugins: [require("tailwindcss-animate")],
