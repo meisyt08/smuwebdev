@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import Image from "next/image";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Terminal } from "lucide-react";
-
+//add div at the top to see the first thing
 // export default function AboutMe() {
 //   return (
 //     <div className="p-5">
@@ -187,6 +187,9 @@ export default function ExpandableCardDemo() {
      
       return (
         <>
+        <div>
+        <div className="bg-white h-[100px] w-[200px]"></div>
+        </div>
           <AnimatePresence>
             {active && typeof active === "object" && (
               <motion.div
@@ -362,7 +365,7 @@ export default function ExpandableCardDemo() {
     const cards = [
       {
         description: "Email: secretariat@ncada.org.sg",
-        title: "National Council Against Drug Abuse",
+        title: "National Councjil Against Drug Abuse",
         src: "/Anti Drug Ribbon.png",
         ctaText: "Learn More",
         ctaLink: "https://www.ncada.org.sg/",
@@ -425,7 +428,7 @@ Crisis Intervention: FSCs offer immediate assistance in times of crisis, such as
       {
         description: "Tel: 6732 1122 Email: sana@sana.org.sg",
         title: "The singapore Anti-Narcotics Association (SANA)",
-        src: "/NCADA_PNG_logo_RGB_2.PNG",
+        src: "/SANA.png",
         ctaText: "Learn More",
         ctaLink: "https://www.sana.org.sg/",
         content: () => {
@@ -442,7 +445,7 @@ Family Support: SANA provides counseling and guidance to families of individuals
       {
         description: "For treatment and rehabilitation",
         title: "Drug Rehabilitation Centre (DRC)",
-        src: "/NCADA_PNG_logo_RGB_2.PNG",
+        src: "/Drugs.jpg",
         ctaText: "Learn More",
         ctaLink: "https://www.sps.gov.sg/files/prison%20news/prison-news-march-2021.pdf",
         content: () => {
@@ -460,7 +463,7 @@ Reintegration Support: Support services to help individuals reintegrate into soc
       {
         description: "Hotline: 1800-283-7019",
         title: "Singapore Association for Mental Health (SAMH)",
-        src: "/NCADA_PNG_logo_RGB_2.PNG",
+        src: "/SAMH logo.PNG",
         ctaText: "Learn More",
         ctaLink: "https://www.samhealth.org.sg/",
         content: () => {
