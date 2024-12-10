@@ -21,7 +21,23 @@ export function NavigationBar(){
             <NavigationMenuItem>
             <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-            Home
+            About Us
+            </NavigationMenuLink> 
+            </Link>
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+            <Link href="/start-page" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            Game
+            </NavigationMenuLink> 
+            </Link>
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+            <Link href="/resources" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            Resources
             </NavigationMenuLink> 
             </Link>
             </NavigationMenuItem>

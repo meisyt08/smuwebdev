@@ -22,11 +22,11 @@ export default function StartPage() {
       />
       <div className="flex items-center justify-center h-screen">
         <div className="text-center p-6 flex gap-4 hover:scale-105 transition-transform">
-          <BackgroundGradient className="rounded-[22px] bg-white dark:bg-zinc-900 bg-opacity-90">
-            <button className="bg-transparent text-4xl font-bold px-6 py-4" onClick={handleClick}>
+          
+              <button className="bg-transparent text-4xl font-bold text-white px-5 hover:pr-8" onClick={handleClick}>
               Descend into Madness →
             </button>
-          </BackgroundGradient>
+         
         </div>
       </div>
     </div>
