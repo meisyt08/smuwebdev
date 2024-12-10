@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "a94df5113d4c4d9f",
+    "type": "split",
+    "children": [
+      {
+        "id": "751fb4b8f5e93dea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9f497414797aa0e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "my-app/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "626d95d704fc519d",
+    "type": "split",
+    "children": [
+      {
+        "id": "2810897741b28063",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f75d003a004345cb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "596288aa8e3322f1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3a7ca8affd6f6fd6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5afc1aee7cff2dec",
+    "type": "split",
+    "children": [
+      {
+        "id": "e7dd7150894187e8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1215095bf04d0abe",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "my-app/game-narrative.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for game-narrative"
+            }
+          },
+          {
+            "id": "85ef536edddc3635",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "my-app/game-narrative.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from game-narrative"
+            }
+          },
+          {
+            "id": "ae662dae52fc3e51",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "158db660dc305cd2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "my-app/game-narrative.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of game-narrative"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9f497414797aa0e1",
+  "lastOpenFiles": [
+    "my-app/node_modules/yocto-queue/readme.md",
+    "my-app/README.md",
+    "my-app/game-narrative.md",
+    "README.md"
+  ]
+}
