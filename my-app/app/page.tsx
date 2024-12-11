@@ -37,7 +37,7 @@ export default function AboutMe() {
     },
   ];
   return (
-    <div className="mt-24">
+    <div className="mt-10">
       <AnimatedTestimonials testimonials={testimonials} />
     </div>
   );
