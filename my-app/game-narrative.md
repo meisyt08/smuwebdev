@@ -84,17 +84,18 @@ N:
 > think i weird: Naturally, you ask him why, as it is a big amount of money. <skip above to Approach/TELL>
 6.
 Y:
-> Steal: You and your mom have a major fallout, and she threatens to call the authorities on you. Eyes wide, you threaten her back out of rage. With a knife. Then the main door opens...
+> Steal: You and your mom have a major fallout, and she threatens to call the authorities on you. Eyes wide, you also threaten her out of rage. With the kitchen knife. Then the main door opens...
 > Borrow: Zaniah continues to mention that you have been seeming stressed recently, and that she is worried for you. A pang of guilt rises in your chest. Should you confess to her? (Y1/N1)
         Y1: You decide to confess to Zaniah about it. She stares at you with wide eyes, and your heart rate spikes... But she seems to calm down quickly, and gently tells you she'll try to help you. **<skip to HELP>**
-        N1: you continue to hide the fact that you need it for vaping.  "It's just.. It's... I need 40 bucks because I owe someone this amount for buying a game item. You know...the one I spent on the FruitBlox upgrade... Yeah that money wasn't actually mine," you say.
+        N1: you continue to hide the fact that you need it for vaping.  "It's just... It's... I need 40 bucks because I owe someone this amount for buying a game item. You know...the one I spent on the FruitBlox powerup... Yeah that money wasn't actually mine," you say.
 N: <approach/TELL />
-   You're surprised, as you were literally playing that game with him when he bought using money from his bank account. Either ways, you don't have 40 bucks ready to lend to him. Plus, you know he was never the type of person to borrow this much from others and then spend it frivolously. (Gently ask who he borrowed from/Act shocked and ask why he never told you)
-    > gently ask: he stammers and averts his eyes, mumbling a name you never heard before. You start to realise he might be lying.
-    > Act shocked: bro you're supposed to focus on your end goal of helping him not questioning him confrontationally about why you don't already know certain things. try again. <skip above to N>
-7.
-
-## HELP
-
-
-
+   You're surprised, as you were literally playing that game with him when he bought the powerup using money from his bank account, and it costs less than 40bucks. You also don't have 40 bucks ready to lend to him. Plus, you know he was never the type of person to borrow this much from others and then spend it frivolously. (Gently ask who he borrowed from/Act shocked and ask why he never told you)
+    > gently ask: he stammers and averts his eyes, mumbling a name you have never heard before. You start to realise he might be lying. What do you do? (Directly call out the fact that he is lying/)
+### TO EDIT ABOVE
+    > Act shocked: bro you're supposed to focus on your end goal of helping him, not questioning him confrontationally about why you don't already know certain things. try again. <skip above to N>
+7. 
+Y: 
+    Steal: It's your dad. Witnessing the scenario in front of him, his jaw drops. He quickly comes and snatches the knife from your hands. Holding on to your hand tightly to prevent you from running off, he bends to your eye level and gently asks about what's going on. Will you tell him?
+    Borrow N1: Your friend still looks skeptical. She asks you who you borrowed it from. You stammer something out, because it's a lie that you didn't completely think through.
+N: 
+### HELP
