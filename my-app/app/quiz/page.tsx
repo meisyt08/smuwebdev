@@ -1,16 +1,24 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { gameFramework, GameState } from "./decisions";
+import { useRouter } from "next/navigation";
 
 export default function Quiz() {
+  const router = useRouter();
   const [currentStateKey, setCurrentStateKey] = useState<string>("start");
   const currentState: GameState = gameFramework[currentStateKey];
 
   const handleOptionClick = (nextStateKey: string) => {
     setCurrentStateKey(nextStateKey);
   };
+
+  useEffect(() => {
+    if (currentStateKey === "end") {
+      router.push('/resources');
+    }
+  }, [currentStateKey, router]);
 
   return (
     <div className="w-screen h-[90vh] flex justify-center items-center">
