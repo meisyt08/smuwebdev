@@ -16,7 +16,9 @@ export default function Quiz() {
 
   useEffect(() => {
     if (currentStateKey === "end") {
-      router.push('/resources');
+      router.push('/resources?result=badEnd');
+    } else if (currentStateKey === "partII") {
+      router.push('/resources?result=goodEnd');
     }
   }, [currentStateKey, router]);
 
