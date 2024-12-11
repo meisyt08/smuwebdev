@@ -39,9 +39,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <div className="">
-              <NavigationBar />
-            </div>
+            <NavigationBar />
             {children}
           </ThemeProvider>
         </body>
