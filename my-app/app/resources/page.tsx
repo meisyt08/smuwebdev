@@ -1,13 +1,13 @@
 "use client";
-import React, { useEffect, useId, useRef, useState } from "react";
+import React, { useEffect, useId, useRef, useState, Suspense } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import Image from "next/image";
-import { useSearchParams } from 'next/navigation'
+import { useSearchParams } from "next/navigation";
 
-export default function ExpandableCardDemo() {
-  const searchParams = useSearchParams()
-  const result = searchParams.get('result') ?? "";
+function ExpandableCardDemo() {
+  const searchParams = useSearchParams();
+  const result = searchParams?.get("result");
 
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
     null
@@ -127,19 +127,29 @@ export default function ExpandableCardDemo() {
           </div>
         ) : null}
       </AnimatePresence>
-      {result && result == "goodEnd" &&
+      {result && (
         <div className="max-w-2xl mx-auto w-full gap-4 mb-6">
-          <h1 className="text-2xl font-bold">Congratulations! You said no to drugs!</h1>
-          <h1 className="text-xl">Help your friends to seek help</h1>
+          {result === "goodEnd" ? (
+            <>
+              <h1 className="text-2xl font-bold">
+                Congratulations! You said no to drugs!
+              </h1>
+              <h1 className="text-xl">
+                Help your friends to seek help through these hotlines
+              </h1>
+            </>
+          ) : result === "badEnd" ? (
+            <>
+              <h1 className="text-2xl font-bold">
+                Oh no! You are addicted to drugs!
+              </h1>
+              <h1 className="text-xl">
+                Your friend recommended these hotlines for you to seek help
+              </h1>
+            </>
+          ) : null}
         </div>
-      }
-
-      {result && result == "badEnd" &&
-        <div className="max-w-2xl mx-auto w-full gap-4 mb-6">
-          <h1 className="text-2xl font-bold">Oh no! You are addicted to drugs!</h1>
-          <h1 className="text-xl">Your friend recommended these hotlines for you to seek help</h1>
-        </div>
-      }
+      )}
 
       <ul className="max-w-2xl mx-auto w-full gap-4">
         {cards.map((card) => (
@@ -184,6 +194,14 @@ export default function ExpandableCardDemo() {
         ))}
       </ul>
     </>
+  );
+}
+
+export default function PageWrapper() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ExpandableCardDemo />
+    </Suspense>
   );
 }
 
