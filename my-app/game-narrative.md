@@ -52,15 +52,49 @@ if have free time, can create a tutorial page for how to play the game.
         N2: you sit in silence, letting the FOMO sink in...your thoughts overwhelm you as you stare at the rest having fun... maybe you should actually try it... (Y3/N3)
             Y3: skip to 11N
             N3: wow, you're strong. you walk out on your friends and leave this group of people. **skip to <part II>**
-    N1: slowly... you fall into a cycle... one that you love...
+    N1: slowly... you fall into a cycle...
     from that day onwards, you ride on the high, needing more and more whiffs of that magical substance. the familiar strawberry flavours fill your mouth with ecstacy, drowns your brains in mushy heaven, and you can't help but go back to it... because it's fulfilling; because it's phenomenal; because it's something you can't replicate elsewhere.
 
 ## part II
 N1=Y (you got addicted)
-N = (you didn't attend the karaoke that fateful day. now your bestie got addicted after the KTV day)
+N = (you didn't attend the karaoke that fateful day. However, your best friend got addicted after the KTV day)
 
 1.
-Y: slowly, you mix with this friend group more and more often. 
-N: Jared has 
+    Y: Slowly, you mix with this friend group more and more often. 
+    N: Jared, your best friend in the group, has been acting unlike himself lately.
+2. 
+    Y: After your encounter with the vape, it seems like your friend group respects you more. They call you over for more outings and are more inclusive of you.
+    N: You notice him being anxious more often, protective of his belongings, as well as losing interest in life in general... 
+3. 
+    Y: On the 14th, all of you have decided to meet up secretly so that you can get that much-needed refillable. You readily agree. However, afterwards, Bob and Janine have asked you to bring 70bucks, and the 14th is next week...
+    N: It's weird, because this change seemed very out of the blue... and he's been acting like that ever since that karaoke session. Should you approach him? (approach/he'll think i'm weird)
+4. 
+    Y: You rack your brains to figure out how to get that remaining 40bucks in a week. You need to borrow it from someone because you don't have the ability to get that much money yet. Or you can **steal**...
+    N: 
+       approach: during recess, you ask him if he is okay, explaining that you have been noticing that he looks stressed recently. He fervently denies being stressed, and seems to take it like an insult. You're taken aback. How can you help him? (Calm him down & tell him that you're worried about how he seems fidgety all day/Calm down & google for help)
+            Tell: You place your hand on his shoulder, trying to comfort him and say that you care about his mental health. You say that you're worried about how he seems fidgety all day. You ask if he needs help with something and if there's anything bothering him.
+            Google: You try to calm down after the reaction. The two of you settle into silence as he picks at his food. You pull your phone out under the table to google, and find out that you must talk to him in a non-confrontational way, but show that you care. You decide to do just that. <skip to TELL>
+       think I weird: during recess, you watch as he picks out little bites from his nasi lemak meal. yeah, something is definitely wrong, but you're not sure what. you decide to google his signs, but it returns the usual stress symptoms. Then, he asks you if you have 40 bucks... 
+5.
+Y:  Should you steal or borrow the money? (steal/borrow)
+    > Steal: you try to steal from your mom and got caught. oops. now your entire plan is exposed as she found a paper note from Bob about the meetup, while digging through your belongings. Your mom and you start arguing and you are skyhigh-stressed as you find no way out.
+    > Borrow: You try to ask Zaniah, your bestie, during recess, to borrow 40 bucks. Obviously, that is stupid since it is a large amount of money at once, which you had never asked for. She confronts you about your need for money.
+N: 
+> Approach/TELL: He stares at you for a while, then shakes his head rapidly. "It's just.. It's... I need 40 bucks because I owe someone this amount for buying a game item. You know...the one I spent on the FruitBlox upgrade... Yeah that money wasn't actually mine."
+> think i weird: Naturally, you ask him why, as it is a big amount of money. <skip above to Approach/TELL>
+6.
+Y:
+> Steal: You and your mom have a major fallout, and she threatens to call the authorities on you. Eyes wide, you threaten her back out of rage. With a knife. Then the main door opens...
+> Borrow: Zaniah continues to mention that you have been seeming stressed recently, and that she is worried for you. A pang of guilt rises in your chest. Should you confess to her? (Y1/N1)
+        Y1: You decide to confess to Zaniah about it. She stares at you with wide eyes, and your heart rate spikes... But she seems to calm down quickly, and gently tells you she'll try to help you. **<skip to HELP>**
+        N1: you continue to hide the fact that you need it for vaping.  "It's just.. It's... I need 40 bucks because I owe someone this amount for buying a game item. You know...the one I spent on the FruitBlox upgrade... Yeah that money wasn't actually mine," you say.
+N: <approach/TELL />
+   You're surprised, as you were literally playing that game with him when he bought using money from his bank account. Either ways, you don't have 40 bucks ready to lend to him. Plus, you know he was never the type of person to borrow this much from others and then spend it frivolously. (Gently ask who he borrowed from/Act shocked and ask why he never told you)
+    > gently ask: he stammers and averts his eyes, mumbling a name you never heard before. You start to realise he might be lying.
+    > Act shocked: bro you're supposed to focus on your end goal of helping him not questioning him confrontationally about why you don't already know certain things. try again. <skip above to N>
+7.
+
+## HELP
+
 
 

@@ -108,7 +108,7 @@ export const gameFramework: { [key: string]: GameState } = {
         }
     },
     "cycleBegins": {
-        text: "Slowly... You fall into a cycle... One that you love... From that day onwards, you ride on the high, needing more and more whiffs of that magical substance. The familiar strawberry flavours fill your mouth with ecstasy, drowns your brains in mushy heaven, and you can't help but go back to it... Because it's fulfilling; because it's phenomenal; because it's something you can't replicate elsewhere.",
+        text: "Slowly... You fall into a cycle... From that day onwards, you ride on the high, needing more and more whiffs of that magical substance. The familiar strawberry flavours fill your mouth with ecstasy, drowns your brains in mushy heaven, and you can't help but go back to it... Because it's fulfilling; because it's phenomenal; because it's something you can't replicate elsewhere.",
         options: {
             "continue": "end"
         }
