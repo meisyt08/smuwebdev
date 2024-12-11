@@ -3,8 +3,158 @@ import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import Image from "next/image";
-//add div at the top to see the first thing
 
+//add div at the top to see the first thing
+// export default function AboutMe() {
+//   return (
+//     <div className="p-5">
+//         Information page
+//         <Card>
+//             <CardHeader>
+//                 <CardTitle>
+//                 National Council Against Drug Abuse (NCADA)
+//                 </CardTitle>
+//                 <CardDescription>
+//                     www.ncada.gov.sg
+//                 </CardDescription>
+//             </CardHeader>
+//             <CardContent>
+//                 <Image src= "/NCADA_PNG_logo_RGB_2.PNG" alt="NCADA logo" width = "360" height = "360"/>
+//                 <div className="flex flex-row gap-2">
+//                     <p className="font-bold">Name:</p>
+//                     National Council Against Drug Abuse (NCADA)
+//                 </div>
+//                 <div className="flex flex-row gap-2"><p className="font-bold">Major:</p>Information Systems</div>
+//                 <div className="flex flex-row gap-2"><p className="font-bold">Hobbies:</p>I like to code</div>
+//             </CardContent>
+//         </Card>
+//         <Card>
+//             <CardHeader>
+//                 <CardTitle>
+//                 Central Narcotics Bureau (CNB)
+//                 </CardTitle>
+//                 <CardDescription>
+//                 www.cnb.gov.sg
+//                 </CardDescription>
+//             </CardHeader>
+//             <CardContent>
+//                 <Image 
+//                     src="/cnb-logo.png" 
+//                     alt="CNB logo"
+//                     width = "360"
+//                     height= "360"
+//                 />
+//                 <div className="flex flex-row gap-2">
+//                     <p className="font-bold">Name:</p>
+//                     Central Narcotics Bureau (CNB)
+//                 </div>
+//                 <div className="flex flex-row gap-2"><p className="font-bold">Major:</p>Information Systems</div>
+//                 <div className="flex flex-row gap-2"><p className="font-bold">Hobbies:</p>I like to code</div>
+//             </CardContent>
+//         </Card>
+//         <Card>
+//             <CardHeader>
+//                 <CardTitle>
+//                 Health Promotion Board (HPB)
+//                 </CardTitle>
+//                 <CardDescription>
+//                 www.hpb.gov.sg
+//                 </CardDescription>
+//             </CardHeader>
+//             <CardContent>
+//                 <Image src= "/HPB.png" alt="HPB logo" width = "360" height = "360"/>
+//                 <div className="flex flex-row gap-2">
+//                     <p className="font-bold">Name:</p>
+//                     Health Promotion Board (HPB)
+//                 </div>
+//                 <div className="flex flex-row gap-2"><p className="font-bold">Major:</p>Information Systems</div>
+//                 <div className="flex flex-row gap-2"><p className="font-bold">Hobbies:</p>I like to code</div>
+//             </CardContent>
+//         </Card>
+//         <Card>
+//             <CardHeader>
+//                 <CardTitle>
+//                 Counseling and Support Services
+//                 </CardTitle>
+//                 <CardDescription>
+//                 Family Service Centres (FSCs)
+//                 </CardDescription>
+//             </CardHeader>
+//             <CardContent>
+//                 <Image src="/Councelling-Online.png" alt="CSS logo" width = "360" height = "360"/>
+//                 <div className="flex flex-row gap-2">
+//                     <p className="font-bold">Name:</p>
+//                     Counseling and Support Services
+//                 </div>
+//                 <div className="flex flex-row gap-2"><p className="font-bold">Major:</p>Information Systems</div>
+//                 <div className="flex flex-row gap-2"><p className="font-bold">Hobbies:</p>I like to code</div>
+//             </CardContent>
+//         </Card>
+//         <Card>
+//             <CardHeader>
+//                 <CardTitle>
+//                 Singapore Association for Mental Health (SAMH)
+//                 </CardTitle>
+//                 <CardDescription>
+//                 www.samh.org.sg
+//                 </CardDescription>
+//             </CardHeader>
+//             <CardContent>
+//                 <Image src="/SAMH-logo-web.png" alt="SAMH logo" width = "360" height = "360"/>
+//                 <div className="flex flex-row gap-2">
+//                     <p className="font-bold">Name:</p>
+//                     Singapore Association for Mental Health (SAMH)
+//                 </div>
+//                 <div className="flex flex-row gap-2"><p className="font-bold">Major:</p>Information Systems</div>
+//                 <div className="flex flex-row gap-2"><p className="font-bold">Hobbies:</p>I like to code</div>
+//             </CardContent>
+//         </Card>
+//         <Card>
+//             <CardHeader>
+//                 <CardTitle>
+//                 Online and In-Person Support
+//                 </CardTitle>
+//                 <CardDescription>
+//                 www.mindmatters.sg
+//                 </CardDescription>
+//             </CardHeader>
+//             <CardContent>
+//                 <Image src= "/Online-support.png" alt="In person support" width = "360" height = "360"/>
+//                 <div className="flex flex-row gap-2">
+//                     <p className="font-bold">Name:</p>
+//                     Online and In-Person Support
+//                 </div>
+//                 <div className="flex flex-row gap-2"><p className="font-bold">Major:</p>Information Systems</div>
+//                 <div className="flex flex-row gap-2"><p className="font-bold">Hobbies:</p>I like to code</div>
+//             </CardContent>
+//         </Card>
+//         <Card>
+//             <CardHeader>
+//                 <CardTitle>
+//                 The Singapore Anti-Narcotics Association (SANA)
+//                 </CardTitle>
+//                 <CardDescription>
+//                 www.sana.org.sg
+//                 </CardDescription>
+//             </CardHeader>
+//             <CardContent>
+//                 <Image src= "/SANA.png" alt="SANA logo" width = "360" height = "360"/>
+//                 <div className="flex flex-row gap-2">
+//                     <p className="font-bold">Name:</p>
+//                     The Singapore Anti-Narcotics Association (SANA)
+//                 </div>
+//                 <div className="flex flex-row gap-2"><p className="font-bold">Major:</p>Information Systems</div>
+//                 <div className="flex flex-row gap-2"><p className="font-bold">Hobbies:</p>I like to code</div>
+//             </CardContent>
+//         </Card>
+//         <Alert>
+//             <Terminal className="h-4 w-4"/>
+//             <AlertTitle>Heads up</AlertTitle>
+//             <AlertDescription>I have added an alert</AlertDescription>
+//         </Alert>
+//     </div>
+//   );
+// }
 
 export default function ExpandableCardDemo() {
     const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
@@ -69,7 +219,7 @@ export default function ExpandableCardDemo() {
                   className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
                   onClick={() => setActive(null)}
                 >
-                  <CloseIcon />
+                  {/* <CloseIcon /> */}
                 </motion.button>
                 <motion.div
                   layoutId={`card-${active.title}-${id}`}
@@ -132,7 +282,7 @@ export default function ExpandableCardDemo() {
             ) : null}
           </AnimatePresence>
           <ul className="max-w-2xl mx-auto w-full gap-4">
-            {cards.map((card, index) => (
+            {cards.map((card) => (
               <motion.div
                 layoutId={`card-${card.title}-${id}`}
                 key={`card-${card.title}-${id}`}
@@ -177,38 +327,38 @@ export default function ExpandableCardDemo() {
       );
     }
      
-    export const CloseIcon = () => {
-      return (
-        <motion.svg
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
-          exit={{
-            opacity: 0,
-            transition: {
-              duration: 0.05,
-            },
-          }}
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="h-4 w-4 text-black"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M18 6l-12 12" />
-          <path d="M6 6l12 12" />
-        </motion.svg>
-      );
-    };
+    // export const CloseIcon = () => {
+    //   return (
+    //     <motion.svg
+    //       initial={{
+    //         opacity: 0,
+    //       }}
+    //       animate={{
+    //         opacity: 1,
+    //       }}
+    //       exit={{
+    //         opacity: 0,
+    //         transition: {
+    //           duration: 0.05,
+    //         },
+    //       }}
+    //       xmlns="http://www.w3.org/2000/svg"
+    //       width="24"
+    //       height="24"
+    //       viewBox="0 0 24 24"
+    //       fill="none"
+    //       stroke="currentColor"
+    //       strokeWidth="2"
+    //       strokeLinecap="round"
+    //       strokeLinejoin="round"
+    //       className="h-4 w-4 text-black"
+    //     >
+    //       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    //       <path d="M18 6l-12 12" />
+    //       <path d="M6 6l12 12" />
+    //     </motion.svg>
+    //   );
+    // };
      
     const cards = [
       {
