@@ -1,4 +1,5 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -15,20 +16,18 @@ export function Hero() {
         to a healthier life.
       </p>
       <div className="flex flex-wrap justify-center gap-4">
-        <Button
-          size="lg"
-          className="font-semibold"
-        >
-          Get Support
+        <Button asChild size="lg" className="font-semibold">
+          <Link href="/resources">Get Support</Link>
         </Button>
         <Button
+          asChild
           size="lg"
           variant={"secondary"}
           className="font-semibold border"
         >
-          About Drug Abuse
+          <Link href="#about">About Drug Abuse</Link>
         </Button>
       </div>
     </section>
-  )
+  );
 }
