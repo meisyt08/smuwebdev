@@ -20,12 +20,20 @@ export function NavigationBar() {
   const isSpecificPage = pathname === "/quiz" || pathname === "/start-page";
 
   return (
-    <NavigationMenu className={`${isSpecificPage ? "" : "border-b bg-white/50 backdrop-blur-sm"} flex flex-row justify-between list-none h-16 sticky top-0 p-4 z-50 min-w-full`}>
+    <NavigationMenu
+      className={`${
+        isSpecificPage
+          ? ""
+          : "border-b bg-white/50 backdrop-blur-sm dark:bg-gray-800/50"
+      }  flex flex-row justify-between list-none h-16 sticky top-0 p-4 z-50 min-w-full`}
+    >
       <div className="flex items-center space-x-2">
         <NavigationMenuItem>
           <Link href="/landing" legacyBehavior passHref>
             <NavigationMenuLink
-              className={`${isSpecificPage ? "text-white" : ""} flex flex-row gap-2`}
+              className={`${
+                isSpecificPage ? "text-white" : ""
+              } flex flex-row gap-2`}
             >
               <Pill className="h-6 w-6 text-purple-600" />
               <span className="text-xl font-bold">TuttiFrutti</span>
