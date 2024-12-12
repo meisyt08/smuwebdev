@@ -40,23 +40,35 @@ export default function AboutMe() {
   ];
 
   return (
-    <div className="mt-10"> {/* Adjusted to 0 for no margin on top */}
+    <div className="mt-0"> {/* Adjusted to 0 for no margin on top */}
+      
       {/* Section: About the website */}
       <div className="h-10 bg-inherit"></div>
-      <div className="min-h-screen flex flex-col justify-start items-center bg-inherit text-center py-10"> {/* Changed to py-10 to pull content higher */}
-        <h2 className="text-3xl font-semibold text-blk">
-          What does the website do?
-        </h2>
-        <p className="mt-4 text-lg text-blk max-w-3xl mx-auto">
-          This website helps users recognize the signs of drug addiction and provides essential resources for support. It offers guidance on identifying addiction symptoms, accessing treatment, and navigating the recovery process. By empowering both individuals struggling with addiction and their loved ones, it provides tools like self-assessments, coping strategies, and access to support networks. The site works to reduce stigma, normalize the conversation around addiction, and provide a confidential space for those seeking help. Ultimately, it serves as a vital resource for early intervention, recovery, and ongoing emotional support.
-        </p>
+
+      {/* Flex container for text and image, using ml-auto to push content to the right */}
+      <div className="flex flex-col lg:flex-row items-center justify-start lg:ml-auto px-4 space-x-8"> {/* Using lg:ml-auto to push items right on large screens */}
+        
+        {/* Left-aligned text */}
+        <div className="min-h-screen flex flex-col justify-start items-start bg-inherit text-left py-10 max-w-3xl">
+          <h2 className="text-3xl font-semibold text-black">
+            What does our website do?
+          </h2>
+          <p className="mt-4 text-lg text-black">
+            This website helps users recognize the signs of drug addiction and provides essential resources for support. It offers guidance on identifying addiction symptoms, accessing treatment, and navigating the recovery process. By empowering both individuals struggling with addiction and their loved ones, it provides tools like self-assessments, coping strategies, and access to support networks. The site works to reduce stigma, normalize the conversation around addiction, and provide a confidential space for those seeking help. Ultimately, it serves as a vital resource for early intervention, recovery, and ongoing emotional support.
+          </p>
+        </div>
+
+        {/* Image (now aligned to the top) */}
+        <img 
+          src="newguy.png" 
+          alt="Thinking guy"
+          className="h-[350px] w-[350px] object-contain self-start" // Set exact image size (350px)
+        />
       </div>
-      
-      {/* Removed the div with h-20 */}
-      
+
       {/* Section: Who are we? */}
-      <div className="flex flex-col justify-center items-center bg-inherit text-center mb-0 py-4"> {/* Reduced margin-bottom and added padding for positioning */}
-        <h2 className="text-3xl font-semibold">
+      <div className="flex flex-col justify-center items-center bg-inherit text-center mb-0 py-4">
+        <h2 className="text-3xl font-semibold text-black">
           Who are we?
         </h2>
       </div>
