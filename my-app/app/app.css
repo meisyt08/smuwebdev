@@ -1,0 +1,75 @@
+/* App.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .App {
+    overflow-x: hidden; /* Prevent horizontal overflow on the body */
+  }
+  
+  /* Vertical scroll container */
+  .vertical-scroll {
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  
+  .vertical-scroll::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+  
+  /* Section Styles */
+  .section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.5s ease;
+  }
+  
+  /* Section 1 */
+  .section-1 {
+    background-color: lightblue;
+  }
+  
+  /* Section 2 (where we trigger scroll animation) */
+  .section-2 {
+    background-color: lightgreen;
+  }
+  
+  .section-2.animate {
+    background-color: lightcoral; /* Triggered color change */
+  }
+  
+  /* Section 3 */
+  .section-3 {
+    background-color: lightyellow;
+  }
+  
+  /* Horizontal scroll container */
+  .horizontal-scroll {
+    width: 100%;
+    height: 300px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    background-color: lightgreen;
+    margin-top: 20px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  
+  .horizontal-scroll::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+  
+  .scroll-item {
+    display: inline-block;
+    width: 200px;
+    height: 100%;
+    background-color: lightcoral;
+    margin-right: 10px;
+  }
+  
