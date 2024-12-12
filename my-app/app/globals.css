@@ -78,7 +78,7 @@ body {
 }
 
 html, body {
-  overflow: hidden; /* Prevent scrolling */
+  overflow: visible; /* Prevent scrolling */
   height: 100%;     /* Ensure the page takes up the full height */
   margin: 0;        /* Remove default margin */
 }

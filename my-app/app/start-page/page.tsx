@@ -61,7 +61,7 @@ export default function StartPage() {
         src="/The sun.jpg"
         alt="background pic"
         layout="fill"
-        className="-z-50 object-cover pointer-events-none transition-all group-hover:backdrop-blur-lg"
+        className="-z-50 object-cover"
       />
       {/* Content area */}
       <div className="flex items-center justify-center h-screen">
