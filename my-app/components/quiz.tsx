@@ -24,29 +24,29 @@ export default function Quiz() {
   const currentQuizItem = quizInput[currentQuestion];
 
   useEffect(() => {
-    if (currentQuestion === "end_suspicious" || currentQuestion === "end_arrested") {
+    if (currentQuestion === "bad_end") {
       router.push("/resources?result=badEnd");
-    } else if (currentQuestion === "end_confess" || currentQuestion === "end_help" || currentQuestion === "end_confront") {
+    } else if (currentQuestion === "good_end") {
       router.push("/resources?result=goodEnd");
     }
   }, [currentQuestion, router]);
 
   return (
-    <Card className="w-[450px] text-center">
+    <Card className="w-[500px] text-center">
       <CardHeader>
         <CardTitle className="text-2xl">Choose Your Adventure</CardTitle>
-        <CardDescription className="text-md">Make your choices wisely</CardDescription>
+        <CardDescription className="text-lg">Make your choices wisely</CardDescription>
       </CardHeader>
       <CardContent>
         <p className="text-md">{currentQuizItem.question}</p>
       </CardContent>
-      <CardFooter className="flex flex-row justify-around mt-2">
+      <CardFooter className="flex flex-wrap justify-around m-2 space-y-2">
         {Object.entries(currentQuizItem.choices).map(
           ([choice, nextQuestion]) => (
             <Button
               key={choice}
               onClick={() => handleChoice(nextQuestion)}
-              className="px-8 py-4 rounded-2xl text-white border bg-black dark:bg-white dark:text-black"
+              className="w-full px-8 py-4 text-white border text-md bg-black dark:bg-white dark:text-black"
             >
               {choice}
             </Button>
