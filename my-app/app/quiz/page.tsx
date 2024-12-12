@@ -1,53 +1,70 @@
-"use client";
+// "use client";
 
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
+// import Image from "next/image";
+// import { gameFramework, GameState } from "./decisions";
+// import { useRouter } from "next/navigation";
+
+// export default function Quiz() {
+//   const router = useRouter();
+//   const [currentStateKey, setCurrentStateKey] = useState<string>("start");
+//   const currentState: GameState = gameFramework[currentStateKey];
+
+//   const handleOptionClick = (nextStateKey: string) => {
+//     setCurrentStateKey(nextStateKey);
+//   };
+
+//   useEffect(() => {
+//     if (currentStateKey === "end") {
+//       router.push('/resources?result=badEnd');
+//     } else if (currentStateKey === "partII") {
+//       router.push('/resources?result=goodEnd');
+//     }
+//   }, [currentStateKey, router]);
+
+//   return (
+//     <div className="w-screen h-[90vh] flex justify-center items-center">
+//       <div className="px-4">
+//         <Image
+//           src="/1.png"
+//           alt="background pic"
+//           fill={true}
+//           className="-z-50 object-cover pointer-events-none"
+//         />
+//         <div className="text-white text-center">
+//           <h1 className="mb-4 text-2xl max-w-3xl">{currentState.text}</h1>
+//           <div className="text-3xl">
+//             {Object.keys(currentState.options).map((optionKey) => (
+//               <button
+//                 key={optionKey}
+//                 onClick={() =>
+//                   handleOptionClick(currentState.options[optionKey])
+//                 }
+//                 className="mt-2 px-6"
+//               >
+//                 {optionKey}
+//               </button>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+import Quiz from '@/components/quiz'
 import Image from "next/image";
-import { gameFramework, GameState } from "./decisions";
-import { useRouter } from "next/navigation";
 
-export default function Quiz() {
-  const router = useRouter();
-  const [currentStateKey, setCurrentStateKey] = useState<string>("start");
-  const currentState: GameState = gameFramework[currentStateKey];
-
-  const handleOptionClick = (nextStateKey: string) => {
-    setCurrentStateKey(nextStateKey);
-  };
-
-  useEffect(() => {
-    if (currentStateKey === "end") {
-      router.push('/resources?result=badEnd');
-    } else if (currentStateKey === "partII") {
-      router.push('/resources?result=goodEnd');
-    }
-  }, [currentStateKey, router]);
-
+export default function QuizPage() {
   return (
-    <div className="w-screen h-[90vh] flex justify-center items-center">
-      <div className="px-4">
-        <Image
+    <main className="flex items-center justify-center p-24 mt-20">
+      <Image
           src="/1.png"
           alt="background pic"
           fill={true}
           className="-z-50 object-cover pointer-events-none"
         />
-        <div className="text-white text-center">
-          <h1 className="mb-4 text-2xl max-w-3xl">{currentState.text}</h1>
-          <div className="text-3xl">
-            {Object.keys(currentState.options).map((optionKey) => (
-              <button
-                key={optionKey}
-                onClick={() =>
-                  handleOptionClick(currentState.options[optionKey])
-                }
-                className="mt-2 px-6"
-              >
-                {optionKey}
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+      <Quiz />
+    </main>
+  )
 }
