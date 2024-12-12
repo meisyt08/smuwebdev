@@ -76,3 +76,9 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+html, body {
+  overflow: hidden; /* Prevent scrolling */
+  height: 100%;     /* Ensure the page takes up the full height */
+  margin: 0;        /* Remove default margin */
+}
