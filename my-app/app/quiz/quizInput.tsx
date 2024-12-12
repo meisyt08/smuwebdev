@@ -3,6 +3,7 @@ export const quizInput: Record<
   {
     question: string;
     choices: Record<string, string>;
+    image: string;
   }
 > = {
   start: {
@@ -12,6 +13,7 @@ export const quizInput: Record<
       Yes: "2Y",
       No: "2N",
     },
+    image: "/The sun.jpg",
   },
   "2Y": {
     question:
@@ -19,12 +21,14 @@ export const quizInput: Record<
     choices: {
       Continue: "3Y",
     },
+    image: "/1.png",
   },
   "2N": {
     question: "You chill at home for the day, unaware of what's to come...",
     choices: {
       Continue: "partII_1N",
     },
+    image: "/new sun.png",
   },
   "3Y": {
     question:
@@ -32,6 +36,7 @@ export const quizInput: Record<
     choices: {
       Continue: "4",
     },
+    image: "/1.png",
   },
   "4": {
     question: "They're calling you over!! Move closer to them?",
@@ -39,6 +44,7 @@ export const quizInput: Record<
       Yes: "5Y",
       No: "5N",
     },
+    image: "/1.png",
   },
   "5Y": {
     question:
@@ -46,6 +52,7 @@ export const quizInput: Record<
     choices: {
       Continue: "6",
     },
+    image: "/1.png",
   },
   "5N": {
     question:
@@ -53,6 +60,7 @@ export const quizInput: Record<
     choices: {
       Continue: "6",
     },
+    image: "/1.png",
   },
   "6": {
     question: "Will you take the sharpie? Janine is waiting for you...",
@@ -60,12 +68,14 @@ export const quizInput: Record<
       Yes: "7Y",
       No: "7N",
     },
+    image: "/1.png",
   },
   "7Y": {
     question: "You take the sharpie and stare at it curiously...",
     choices: {
       Continue: "8",
     },
+    image: "/1.png",
   },
   "7N": {
     question:
@@ -73,6 +83,7 @@ export const quizInput: Record<
     choices: {
       Continue: "8",
     },
+    image: "/1.png",
   },
   "8": {
     question:
@@ -80,6 +91,7 @@ export const quizInput: Record<
     choices: {
       Continue: "9",
     },
+    image: "/1.png",
   },
   "9": {
     question:
@@ -87,6 +99,7 @@ export const quizInput: Record<
     choices: {
       Continue: "10",
     },
+    image: "/1.png",
   },
   "10": {
     question:
@@ -95,6 +108,7 @@ export const quizInput: Record<
       Yes: "11Y1",
       No: "11N1",
     },
+    image: "/1.png",
   },
   "11Y1": {
     question:
@@ -102,6 +116,7 @@ export const quizInput: Record<
     choices: {
       Continue: "12Y1",
     },
+    image: "/1.png",
   },
   "11N1": {
     question:
@@ -109,6 +124,7 @@ export const quizInput: Record<
     choices: {
       Continue: "12N1",
     },
+    image: "/1.png",
   },
   "12Y1": {
     question:
@@ -116,6 +132,7 @@ export const quizInput: Record<
     choices: {
       Continue: "13Y1",
     },
+    image: "/1.png",
   },
   "12N1": {
     question:
@@ -123,6 +140,7 @@ export const quizInput: Record<
     choices: {
       Continue: "13N1",
     },
+    image: "/1.png",
   },
   "13Y1": {
     question:
@@ -130,6 +148,7 @@ export const quizInput: Record<
     choices: {
       Continue: "14Y1",
     },
+    image: "/1.png",
   },
   "13N1": {
     question:
@@ -137,6 +156,7 @@ export const quizInput: Record<
     choices: {
       Continue: "14N1",
     },
+    image: "/1.png",
   },
   "14Y1": {
     question:
@@ -145,6 +165,7 @@ export const quizInput: Record<
       Yes: "11N1",
       No: "14N2",
     },
+    image: "/1.png",
   },
   "14N2": {
     question:
@@ -153,6 +174,7 @@ export const quizInput: Record<
       Yes: "11N1",
       No: "14N3",
     },
+    image: "/1.png",
   },
   "14N3": {
     question:
@@ -160,6 +182,7 @@ export const quizInput: Record<
     choices: {
       Continue: "partII_1N",
     },
+    image: "/1.png",
   },
   "14N1": {
     question:
@@ -167,12 +190,14 @@ export const quizInput: Record<
     choices: {
       Continue: "partII_1Y",
     },
+    image: "/1.png",
   },
   partII_1Y: {
     question: "Slowly, you mix with this friend group more and more often.",
     choices: {
       Continue: "partII_2Y",
     },
+    image: "/1.png",
   },
   partII_1N: {
     question:
@@ -180,6 +205,7 @@ export const quizInput: Record<
     choices: {
       Continue: "partII_2N",
     },
+    image: "/1.png",
   },
   partII_2Y: {
     question:
@@ -187,6 +213,7 @@ export const quizInput: Record<
     choices: {
       Continue: "partII_3Y",
     },
+    image: "/1.png",
   },
   partII_2N: {
     question:
@@ -194,6 +221,7 @@ export const quizInput: Record<
     choices: {
       Continue: "partII_3N",
     },
+    image: "/1.png",
   },
   partII_3Y: {
     question:
@@ -201,6 +229,7 @@ export const quizInput: Record<
     choices: {
       Continue: "partII_4Y",
     },
+    image: "/1.png",
   },
   partII_3N: {
     question:
@@ -209,6 +238,7 @@ export const quizInput: Record<
       Approach: "partII_4N_approach",
       "He'll think I'm weird": "partII_4N_weird",
     },
+    image: "/1.png",
   },
   partII_4Y: {
     question:
@@ -217,6 +247,7 @@ export const quizInput: Record<
       Steal: "partII_5Y_steal",
       Borrow: "partII_5Y_borrow",
     },
+    image: "/1.png",
   },
   partII_4N_approach: {
     question:
@@ -225,6 +256,7 @@ export const quizInput: Record<
       "Tell him you're worried": "partII_5N_tell",
       "Google for help": "partII_5N_google",
     },
+    image: "/1.png",
   },
   partII_4N_weird: {
     question:
@@ -232,6 +264,7 @@ export const quizInput: Record<
     choices: {
       Continue: "partII_5N_tell",
     },
+    image: "/1.png",
   },
   partII_5Y_steal: {
     question:
@@ -239,6 +272,7 @@ export const quizInput: Record<
     choices: {
       Continue: "partII_6Y_steal",
     },
+    image: "/1.png",
   },
   partII_5Y_borrow: {
     question:
@@ -246,6 +280,7 @@ export const quizInput: Record<
     choices: {
       Continue: "partII_6Y_borrow",
     },
+    image: "/1.png",
   },
   partII_5N_tell: {
     question:
@@ -253,6 +288,7 @@ export const quizInput: Record<
     choices: {
       Continue: "partII_6N",
     },
+    image: "/1.png",
   },
   partII_5N_google: {
     question:
@@ -260,6 +296,7 @@ export const quizInput: Record<
     choices: {
       Continue: "partII_5N_tell",
     },
+    image: "/1.png",
   },
   partII_6Y_steal: {
     question:
@@ -267,6 +304,7 @@ export const quizInput: Record<
     choices: {
       Continue: "partII_7Y_steal",
     },
+    image: "/1.png",
   },
   partII_6Y_borrow: {
     question:
@@ -275,6 +313,7 @@ export const quizInput: Record<
       Yes: "partII_7Y_borrow_Y1",
       No: "partII_7Y_borrow_N1",
     },
+    image: "/1.png",
   },
   partII_6N: {
     question:
@@ -283,6 +322,7 @@ export const quizInput: Record<
       "Gently ask who he borrowed from": "partII_7N_gently",
       "Act shocked and ask why he never told you": "partII_7N_shocked",
     },
+    image: "/1.png",
   },
   partII_7Y_steal: {
     question:
@@ -291,6 +331,7 @@ export const quizInput: Record<
       Yes: "end_confess",
       No: "end_arrested",
     },
+    image: "/1.png",
   },
   partII_7Y_borrow_Y1: {
     question:
@@ -298,6 +339,7 @@ export const quizInput: Record<
     choices: {
       Continue: "end_help",
     },
+    image: "/1.png",
   },
   partII_7Y_borrow_N1: {
     question:
@@ -305,6 +347,7 @@ export const quizInput: Record<
     choices: {
       Continue: "end_suspicious",
     },
+    image: "/1.png",
   },
   partII_7N_gently: {
     question:
@@ -313,6 +356,7 @@ export const quizInput: Record<
       "Directly call out the fact that he is lying": "end_confront",
       "Offer to help him": "end_help",
     },
+    image: "/1.png",
   },
   partII_7N_shocked: {
     question:
@@ -320,6 +364,7 @@ export const quizInput: Record<
     choices: {
       "Try again": "partII_6N",
     },
+    image: "/1.png",
   },
   end_confess: {
     question:
@@ -327,6 +372,7 @@ export const quizInput: Record<
     choices: {
       Continue: "good_end",
     },
+    image: "/1.png",
   },
   end_arrested: {
     question:
@@ -334,6 +380,7 @@ export const quizInput: Record<
     choices: {
       Continue: "bad_end",
     },
+    image: "/1.png",
   },
   end_help: {
     question:
@@ -341,6 +388,7 @@ export const quizInput: Record<
     choices: {
       Continue: "good_end",
     },
+    image: "/1.png",
   },
   end_suspicious: {
     question:
@@ -348,6 +396,7 @@ export const quizInput: Record<
     choices: {
       Continue: "bad_end",
     },
+    image: "/1.png",
   },
   end_confront: {
     question:
@@ -355,13 +404,16 @@ export const quizInput: Record<
     choices: {
       Continue: "good_end",
     },
+    image: "/1.png",
   },
   good_end: {
     question: "Loading Results...",
     choices: {},
+    image: "/1.png",
   },
   bad_end: {
     question: "Loading Results...",
     choices: {},
+    image: "/1.png",
   },
 };
