@@ -18,7 +18,7 @@ export function ModeToggle() {
 
   return (
     <Button
-      variant="outline"
+      variant="transparent"
       size="icon"
       onClick={toggleTheme}
       className={`${isSpecificPage ? "text-white" : ""}`}

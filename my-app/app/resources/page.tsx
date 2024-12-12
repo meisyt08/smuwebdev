@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
+import { Footer } from "@/components/Footer"
 
 function ExpandableCardDemo() {
   const searchParams = useSearchParams();
@@ -151,7 +152,7 @@ function ExpandableCardDemo() {
         </div>
       )}
 
-      <ul className="max-w-2xl mx-auto w-full gap-4 mb-4">
+      <ul className="max-w-2xl mx-auto w-full gap-4 my-4">
         {cards.map((card) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
@@ -201,6 +202,7 @@ export default function PageWrapper() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <ExpandableCardDemo />
+      <Footer />
     </Suspense>
   );
 }

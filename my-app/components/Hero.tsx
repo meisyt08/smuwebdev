@@ -17,13 +17,14 @@ export function Hero() {
       <div className="flex flex-wrap justify-center gap-4">
         <Button
           size="lg"
-          className="bg-black text-white dark:bg-white dark:text-black font-semibold"
+          className="font-semibold"
         >
           Get Support
         </Button>
         <Button
           size="lg"
-          className="bg-white text-black border dark:bg-black dark:text-white font-semibold"
+          variant={"secondary"}
+          className="font-semibold border"
         >
           About Drug Abuse
         </Button>

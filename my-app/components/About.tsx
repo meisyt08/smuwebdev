@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export function About() {
   return (
-    <section className="px-4 py-20 bg-white flex flex-row justify-between">
+    <section className="px-4 py-20 bg-white dark:bg-gray-700 flex flex-row justify-between">
       <div className="container mx-36 w-[550px] flex flex-wrap">
         <h1 className="mb-6 text-2xl font-bold tracking-tight sm:text-4xl md:text-5xl dark:text-white">
           About&nbsp;
@@ -29,7 +29,7 @@ export function About() {
         </p>
         <Button
           size="lg"
-          className="mt-8 bg-black text-white dark:bg-white dark:text-black font-semibold"
+          className="mt-8 font-semibold"
         >
           Get Support
         </Button>
