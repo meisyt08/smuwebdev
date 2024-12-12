@@ -3,6 +3,8 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Pill } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 import {
   NavigationMenu,
@@ -18,7 +20,19 @@ export function NavigationBar() {
   const isSpecificPage = pathname === "/quiz" || pathname === "/start-page";
 
   return (
-    <NavigationMenu className="flex flex-row justify-between list-none h-16 sticky top-0 p-4 z-50 min-w-full">
+    <NavigationMenu className={`${isSpecificPage ? "" : "border-b bg-white/50 backdrop-blur-sm"} flex flex-row justify-between list-none h-16 sticky top-0 p-4 z-50 min-w-full`}>
+      <div className="flex items-center space-x-2">
+        <NavigationMenuItem>
+          <Link href="/landing" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={`${isSpecificPage ? "text-white" : ""} flex flex-row gap-2`}
+            >
+              <Pill className="h-6 w-6 text-purple-600" />
+              <span className="text-xl font-bold">TuttiFrutti</span>
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+      </div>
       <div className="flex flex-row">
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
