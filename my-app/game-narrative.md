@@ -80,8 +80,8 @@ Y:  Should you steal or borrow the money? (steal/borrow)
      Steal: you try to steal from your mom and got caught. oops. now your entire plan is exposed as she found a paper note from Bob about the meetup, while digging through your belongings. Your mom and you start arguing and you are skyhigh-stressed as you find no way out.
      Borrow: You try to ask Zaniah, your bestie, during recess, to borrow 40 bucks. Obviously, that is stupid since it is a large amount of money at once, which you had never asked for. She confronts you about your need for money.
 N: 
- Approach/TELL: He stares at you for a while, then shakes his head rapidly. "It's just.. It's... I need 40 bucks because I owe someone this amount for buying a game item. You know...the one I spent on the FruitBlox upgrade... Yeah that money wasn't actually mine."
- think i weird: Naturally, you ask him why, as it is a big amount of money. <skip above to Approach/TELL>
+ "Approach/TELL": He stares at you for a while, then shakes his head rapidly. "It's just.. It's... I need 40 bucks because I owe someone this amount for buying a game item. You know...the one I spent on the FruitBlox upgrade... Yeah that money wasn't actually mine."
+ "think i weird": Naturally, you ask him why, as it is a big amount of money. <skip above to Approach/TELL>
 6.
 Y:
  Steal: You and your mom have a major fallout, and she threatens to call the authorities on you. Eyes wide, you also threaten her out of rage. With the kitchen knife. Then the main door opens...
@@ -90,15 +90,15 @@ Y:
         N1: you continue to hide the fact that you need it for vaping.  "It's just... It's... I need 40 bucks because I owe someone this amount for buying a game item. You know...the one I spent on the FruitBlox powerup... Yeah that money wasn't actually mine," you say.
 N: <approach/TELL />
    You're surprised, as you were literally playing that game with him when he bought the powerup using money from his bank account, and it costs less than 40bucks. You also don't have 40 bucks ready to lend to him. Plus, you know he was never the type of person to borrow this much from others and then spend it frivolously. (Gently ask who he borrowed from/Act shocked and demand why he never told you)
-    > gently ask: he stammers and averts his eyes, mumbling a name you have never heard before. his body language is suspicious.
-    > Act shocked: bro you're supposed to focus on your end goal of helping *him*, not questioning him confrontationally about why *you* don't already know certain things. try again. <skip above to N>
+    > "gently ask": he stammers and averts his eyes, mumbling a name you have never heard before. his body language is suspicious.
+    > "Act shocked": bro you're supposed to focus on your end goal of helping *him*, not questioning him confrontationally about why *you* don't already know certain things. try again. <skip above to N>
 7. 
 Y: 
     Steal: It's your dad. Witnessing the scenario in front of him, his jaw drops. He quickly comes and snatches the knife from your hands, placing it back in the kitchen and steering you out of the kitchen.  $# broke one line to 8. #$
     Borrow N1: Your friend still looks skeptical. She asks you who you borrowed it from. You stammer something out, because it's a lie that you didn't completely think through.
 N: Maybe he's lying...? What do you do? (blame him for lying and be mad at him/ "is that the truth? you can tell me, you know, I'm your best friend and I'll help you no matter what")
-    blame: your friend gets defensive and blames you for never being someone he can trust. your friendship breaks down lol, try again. <skip back to 7N>
-    is that the truth: you try to create a safe space. it took some nudging, and convincing that you truly want the best for him. your friend sounds unsure, but something takes over him. tears overwhelm his eyes as he reveals that he has been vaping. **<skip to HELP>**
+    "blame": your friend gets defensive and blames you for never being someone he can trust. your friendship breaks down lol, try again. <skip back to 7N>
+    "is that the truth": you try to create a safe space. it took some nudging, and convincing that you truly want the best for him. your friend sounds unsure, but something takes over him. tears overwhelm his eyes as he reveals that he has been vaping. **<skip to HELP>**
 
 8.
 Y: 
@@ -141,8 +141,18 @@ _6Y-Borrow-Y1 ("i.e. you directly confess to zaniah"):_ Zaniah she acts encourag
     A weight feels lifted off your chest... You're unsure, but slightly comforted by the fact that at least Zaniah is behind you.(continues)
 
     Zaniah helps you draw up a quit plan. She also explains to you more about vapes and their harms, showing you the various help pathways... [END]
-_7N-isthatthetruth:_ now that he has revealed to you that he has been vaping, your task is to help him quit.
-
+_7N-isthatthetruth:_ now that he has revealed to you that he has been vaping, your task is to help him quit. (continues)
+    You are internally surprised and disbelieving that he will vape. But now that he has gotten into this situation, how should you help? (stay calm and urge him to quit/ get mad that he is doing something illegal and say that he will get caught)
+    calm: you give him a side hug, and start assuring him that even though vaping is wrong, you will help him through whatever difficulties he will face and help him get out of substance abuse. [continues]
+        he stares at you wide eyed, but breathes out an okay, then quickly averts his eyes. (help him come up with a quit plan/encourage him to read more about the quit journeys of others, and show him that it's possible)
+        [continues]
+        >quit plan:
+        Both of you drew up a quit plan together. You also explain to him more about vapes and their harms, showing him the various official hotlines and help pathways...
+        > encourage: you encourage him to read more about the quit journeys of others, and show him that it's possible to get out of vaping. you both find resources from google to help him, and realise you can call quit helplines to get help from quit coaches. so you do so... 
+            both continues:
+            congrats! you have successfully encouraged your friend to quit vaping, and found him resources. <continues> later, you support him during his recovery process. it was a tough journey as he suffers from withdrawal symptoms, but luckily you were there to remind him about his end goals and quit plan. <continues> months later, he becomes a much more cheerful person. You both have also stopped mixing with Bob, Janine and the friend group (in fact they got into trouble soon after your friend starts his recovery process). <continues> Thank you for playing the game!
+            [END]
+    mad: he pauses, shocked. with a half-stifled cry, he hisses that he revealed to you something that made him so vulnerable, but that you will not be there to help him through. he leaves with tears in his eyes, and you never see him come back to class after recess... [continues](you failed. try again.) <rechoose "7N-you.are.internally.surprised">
 _11Y-Steal:_ You stare at your dad in slight disbelief. Still, a weight feels lifted off your chest. With your dad's help, you drew up a quit plan. He also explains to you more about vapes and their harms, showing you the various official hotlines and help pathways...[END]
 _13Y-Borrow-n1-y:_ A weight feels lifted off your chest. With Zaniah's help, you drew a quit plan. She also explains to you more about vapes and their harms, showing you the various official hotlines and help pathways...
 [END]
