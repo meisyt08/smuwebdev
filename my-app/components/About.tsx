@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import Link from "next/link";
 
 export function About() {
   return (
@@ -27,11 +28,8 @@ export function About() {
           particularly among younger individuals, requiring continued
           vigilance and intervention.
         </p>
-        <Button
-          size="lg"
-          className="mt-8 font-semibold"
-        >
-          Get Support
+        <Button asChild size="lg" className="mt-8 font-semibold">
+          <Link href="/resources">Get Support</Link>
         </Button>
       </div>
       <div className="flex flex-wrap justify-center items-center mx-auto w-[350px] h-[350px]">
