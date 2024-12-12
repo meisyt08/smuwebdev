@@ -253,7 +253,7 @@ export const quizInput: Record<
     question:
       "During recess, you ask him if he is okay, explaining that you have been noticing that he looks stressed recently. He fervently denies being stressed, and seems to take it like an insult. You're taken aback. How can you help him?",
     choices: {
-      "Tell him you're worried": "partII_5N_tell",
+      "Tell him you're worried for him": "partII_5N_tell",
       "Google for help": "partII_5N_google",
     },
     image: "/1.png",
@@ -262,7 +262,7 @@ export const quizInput: Record<
     question:
       "During recess, you watch as he picks out little bites from his nasi lemak meal. Yeah, something is definitely wrong, but you're not sure what. You decide to google his signs, but it returns the usual stress symptoms. Then, he asks you if you have 40 bucks...",
     choices: {
-      Continue: "partII_5N_tell",
+      Continue: "partII_5N_weird",
     },
     image: "/1.png",
   },
@@ -282,11 +282,19 @@ export const quizInput: Record<
     },
     image: "/1.png",
   },
+  partII_5N_weird: {
+    question:
+      "Naturally, you ask him why, as it is a big amount of money.",
+    choices: {
+      Continue: "partII_5N",
+    },
+    image: "/1.png",
+  },
   partII_5N_tell: {
     question:
       "You place your hand on his shoulder, trying to comfort him and say that you care about his mental health. You say that you're worried about how he seems fidgety all day. You ask if he needs help with something and if there's anything bothering him.",
     choices: {
-      Continue: "partII_6N",
+      Continue: "partII_5N",
     },
     image: "/1.png",
   },
@@ -295,6 +303,15 @@ export const quizInput: Record<
       "You try to calm down after the reaction. The two of you settle into silence as he picks at his food. You pull your phone out under the table to google, and find out that you must talk to him in a non-confrontational way, but show that you care. You decide to do just that.",
     choices: {
       Continue: "partII_5N_tell",
+    },
+    image: "/1.png",
+  },
+  partII_5N: {
+    question:
+      "He stares at you for a while, then shakes his head rapidly. \"It's just.. It's... I need 40 bucks because I owe someone this amount for buying a game item. You know...the one I spent on the FruitBlox upgrade... Yeah that money wasn't actually mine.\"",
+    choices: {
+      "Gently ask who he borrowed from": "partII_7N_gently",
+      "Act shocked and ask why he never told you": "partII_7N_shocked",
     },
     image: "/1.png",
   },
@@ -308,44 +325,42 @@ export const quizInput: Record<
   },
   partII_6Y_borrow: {
     question:
-      "Zaniah continues to mention that you have been seeming stressed recently, and that she is worried for you. A pang of guilt rises in your chest. Should you confess to her?",
+      "Zaniah continues to mention that you have been seeming stressed recently, and that she is worried for you. A pang of guilt rises in your chest. Will you confess to her?",
     choices: {
-      Yes: "partII_7Y_borrow_Y1",
-      No: "partII_7Y_borrow_N1",
+      Yes: "partII_6Y_borrow_Y1",
+      No: "partII_6Y_borrow_N1",
     },
     image: "/1.png",
   },
-  partII_6N: {
-    question:
-      "He stares at you for a while, then shakes his head rapidly. \"It's just.. It's... I need 40 bucks because I owe someone this amount for buying a game item. You know...the one I spent on the FruitBlox upgrade... Yeah that money wasn't actually mine.\"",
-    choices: {
-      "Gently ask who he borrowed from": "partII_7N_gently",
-      "Act shocked and ask why he never told you": "partII_7N_shocked",
-    },
-    image: "/1.png",
-  },
-  partII_7Y_steal: {
-    question:
-      "It's your dad. Witnessing the scenario in front of him, his jaw drops. He quickly comes and snatches the knife from your hands. Holding on to your hand tightly to prevent you from running off, he bends to your eye level and gently asks about what's going on. Will you tell him?",
-    choices: {
-      Yes: "end_confess",
-      No: "end_arrested",
-    },
-    image: "/1.png",
-  },
-  partII_7Y_borrow_Y1: {
+  partII_6Y_borrow_Y1: {
     question:
       "You decide to confess to Zaniah about it. She stares at you with wide eyes, and your heart rate spikes... But she seems to calm down quickly, and gently tells you she'll try to help you.",
     choices: {
-      Continue: "end_help",
+      Continue: "end_6Y_Borrow_Y1",
+    },
+    image: "/1.png",
+  },
+  partII_6Y_borrow_N1: {
+    question:
+      "You continue to hide the fact that you need it for vaping. \"It's just... It's... I need 40 bucks because I owe someone this amount for buying a game item. You know...the one I spent on the FruitBlox powerup... Yeah that money wasn't actually mine,\" you say.",
+    choices: {
+      Continue: "partII_7Y_borrow_N1",
     },
     image: "/1.png",
   },
   partII_7Y_borrow_N1: {
     question:
-      "You continue to hide the fact that you need it for vaping. \"It's just... It's... I need 40 bucks because I owe someone this amount for buying a game item. You know...the one I spent on the FruitBlox powerup... Yeah that money wasn't actually mine,\" you say.",
+      "Your friend still looks skeptical. She asks you who you borrowed it from. You stammer something out, because it's a lie that you didn't completely think through.",
     choices: {
-      Continue: "end_suspicious",
+      Continue: "partII_8Y_borrow_N1",
+    },
+    image: "/1.png",
+  },
+  partII_7Y_steal: {
+    question:
+      "It's your dad. Witnessing the scenario in front of him, his jaw drops. He quickly comes and snatches the knife from your hands, placing it back in the kitchen and steering you out of the kitchen.",
+    choices: {
+      Continue: "partII_8Y_steal"
     },
     image: "/1.png",
   },
@@ -366,46 +381,196 @@ export const quizInput: Record<
     },
     image: "/1.png",
   },
-  end_confess: {
+  partII_8Y_borrow_N1: {
     question:
-      "You confess everything to your dad. He's disappointed but grateful you told the truth. He helps you get support and counseling to overcome your addiction.",
+      "your heart rate spikes because you know that response sucked. but a hand rests on your shoulder as she asks you if you are telling the truth.",
     choices: {
-      Continue: "good_end",
+      Continue: "partII_9Y_borrow_N1",
     },
     image: "/1.png",
   },
-  end_arrested: {
+  partII_8Y_steal: {
     question:
-      "You refuse to tell your dad what's going on. The situation escalates, and the authorities are called. You face serious consequences for your actions.",
+      "Holding on to your hand tightly to prevent you from running off, he bends to your eye level and gently asks about what's going on. Will you tell him?",
+    choices: {
+      Yes: "partII_8Y_steal_y",
+      No: "partII_8Y_steal_n",
+    },
+    image: "/1.png",
+  },
+  partII_8Y_steal_y: {
+    question:
+    "Heat rises within you and your throat feels tight. You open your mouth to say something, but nothing comes out... ",
+    choices: {
+      continue: "partII_9Y_steal_y",
+    },
+    image: "/1.png",
+  },
+  partII_8Y_steal_n: {
+    question: 
+    "Heat rises within you and your throat feels tight. Instead, your mother shouts at your dad, revealing the truth that you have been vaping.",
+    choices: {
+      continue: "partII_9Ystealn_10Ystealy_dadhug",
+    },
+    image: "/1.png",
+  },
+  partII_9Y_borrow_N1: {
+    question:
+      "guilt quickly overwhelms you as you are aware you have been hiding the fact that you vape from the people truly closest to you.",
+    choices: {
+      Continue: "partII_10Y_borrow_N1",
+    },
+    image: "/1.png",
+  },
+  partII_9Y_steal_y: {
+    question: 
+    "Instead, your mother shouts at your dad, revealing the truth that you have been vaping.  You silently nod your head.",
+    choices: {
+      continue: "partII_9Ystealn_10Ystealy_dadhug",
+    },
+    image: "/1.png",
+  },
+  partII_9Ystealn_10Ystealy_dadhug: {
+    question: 
+    "to your surprise, your dad hugs you.",
+    choices: {
+      continue: "partII_11Y_steal",
+    },
+    image: "/1.png",
+  },
+  partII_10Y_borrow_N1: {
+    question:
+      "zaniah assures you once again that she will be there no matter what, and that you can be honest with her. will you tell her?",
+    choices: {
+      Yes: "partII_11Y_borrow_N1_y",
+      No: "partII_11Y_borrow_N1_n",
+    },
+    image: "/1.png",
+  },
+  partII_11Y_steal: {
+    question: 
+    "Your dad assures you that even though vaping is wrong, he will help you through whatever difficulties you will face in life and also help you get out of substance abuse. It will be a hard journey but you will get through it.",
+    choices: {
+      continue: "end_11Y_steal",
+    },
+    image: "/1.png",
+  },
+  partII_11Y_borrow_N1_y: {
+    question:
+      "you inhale. your throat feels tight. you open your mouth but nothing comes out. it's hard. but she nods at you encouragingly...",
+    choices: {
+      Continue: "partII_12Y_borrow_N1_y",
+    },
+    image: "/1.png",
+  },
+  partII_11Y_borrow_N1_n: {
+    question:
+      "you are scared to tell her the truth, for fear that she will be truly disappointed in you. you can't bear to face her directly.",
+    choices: {
+      Continue: "partII_12Y_borrow_N1_n",
+    },
+    image: "/1.png",
+  },
+  partII_11Y_borrow_N1_n_N1: {
+    question:
+      "you eventually refuse to tell her, leaving her in the dark... the bell rings and recess passes. stressing out, you think to choose another path to get the 40bucks.",
+    choices: {
+      Rechoose: "partII_12Y_borrow_N1_n",
+      Steal: "partII_5Y_steal"
+    },
+    image: "/1.png",
+  },
+  partII_12Y_borrow_N1_y: {
+    question:
+      "\"it's...vape,\" you manage to croak out.",
+    choices: {
+      Continue: "partII_13Y_borrow_N1_y",
+    },
+    image: "/1.png",
+  },
+  partII_12Y_borrow_N1_n: {
+    question:
+      "as if she can read your mind, she assures you that there is no need to fear anyone else's reaction. Coming clean now is better than leaving it for later, she says. tell her?",
+    choices: {
+      Yes: "partII_11Y_borrow_N1_y",
+      No: "partII_11Y_borrow_N1_n_N1"
+    },
+    image: "/1.png",
+  },
+  partII_13Y_borrow_N1_y: {
+    question:
+      "To your surprise, zaniah doesn't blame you. Instead, she acts encouraging and assures you that even though vaping is wrong, she will help you through whatever difficulties you will face in life and also help you get out of substance abuse. It will be a hard journey but you will get through it.",
+    choices: {
+      Continue: "end_13Y_borrow_N1_y",
+    },
+    image: "/1.png",
+  },
+//end
+  end_6Y_Borrow_Y1: {
+    question:
+      "Your friend Zaniah acts encouraging and assures you that even though vaping is wrong, she will help you through whatever difficulties you will face and help you get out of substance abuse. ",
+    choices: {
+      Continue: "end_6Y_Borrow_Y1_2",
+    },
+    image: "/1.png",
+  },
+  end_6Y_Borrow_Y1_2: {
+    question:
+      "A weight feels lifted off your chest... You're unsure, but slightly comforted by the fact that at least Zaniah is behind you.",
+    choices: {
+      Continue: "end_6Y_Borrow_Y1_3",
+    },
+    image: "/1.png",
+  },
+  end_6Y_Borrow_Y1_3: {
+    question:
+      "Zaniah helps you draw up a quit plan. She also explains to you more about vapes and their harms, showing you the various help pathways...",
     choices: {
       Continue: "bad_end",
     },
     image: "/1.png",
   },
-  end_help: {
-    question:
-      "Your friend/Zaniah offers to help you. Together, you seek professional help and support to overcome the addiction and its underlying causes.",
+  end_11Y_steal: {
+    question: 
+    "You stare at your dad in slight disbelief. Still, a weight feels lifted off your chest. With your dad's help, you drew up a quit plan. He also explains to you more about vapes and their harms, showing you the various official hotlines and help pathways...",
     choices: {
-      Continue: "good_end",
+      continue: "bad_end",
     },
     image: "/1.png",
   },
-  end_suspicious: {
-    question:
-      "Your friend looks skeptical. She asks you who you borrowed it from. You stammer something out, because it's a lie that you didn't completely think through. Zaniah's suspicion grows, and she decides to talk to your parents about her concerns.",
-    choices: {
-      Continue: "bad_end",
-    },
-    image: "/1.png",
-  },
-  end_confront: {
-    question:
-      "You confront your friend about his lie. He breaks down and admits he's been struggling with a vaping addiction. You offer your support and help him seek professional assistance.",
-    choices: {
-      Continue: "good_end",
-    },
-    image: "/1.png",
-  },
+//   end_confess: {
+//     question:
+//       "You confess everything to your dad. He's disappointed but grateful you told the truth. He helps you get support and counseling to overcome your addiction.",
+//     choices: {
+//       Continue: "good_end",
+//     },
+//     image: "/1.png",
+//   },
+//   end_arrested: {
+//     question:
+//       "You refuse to tell your dad what's going on. The situation escalates, and the authorities are called. You face serious consequences for your actions.",
+//     choices: {
+//       Continue: "bad_end",
+//     },
+//     image: "/1.png",
+//   },
+  
+//   end_suspicious: {
+//     question:
+//       "Your friend looks skeptical. She asks you who you borrowed it from. You stammer something out, because it's a lie that you didn't completely think through. Zaniah's suspicion grows, and she decides to talk to your parents about her concerns.",
+//     choices: {
+//       Continue: "bad_end",
+//     },
+//     image: "/1.png",
+//   },
+//   end_confront: {
+//     question:
+//       "You confront your friend about his lie. He breaks down and admits he's been struggling with a vaping addiction. You offer your support and help him seek professional assistance.",
+//     choices: {
+//       Continue: "good_end",
+//     },
+//     image: "/1.png",
+//   },
   good_end: {
     question: "Loading Results...",
     choices: {},

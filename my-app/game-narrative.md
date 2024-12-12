@@ -71,21 +71,21 @@ N: It's weird, because this change seemed very out of the blue... and he's been 
 4. 
 Y: You rack your brains to figure out how to get that remaining 40bucks in a week. You need to borrow it from someone because you don't have the ability to get that much money yet. Or you can **steal**...
 N: 
-    approach: during recess, you ask him if he is okay, explaining that you have been noticing that he looks stressed recently. He fervently denies being stressed, and seems to take it like an insult. You're taken aback. How can you help him? (Calm him down & tell him that you're worried about how he seems fidgety all day/Calm down & google for help)
-         Tell: You place your hand on his shoulder, trying to comfort him and say that you care about his mental health. You say that you're worried about how he seems fidgety all day. You ask if he needs help with something and if there's anything bothering him.
-         Google: You try to calm down after the reaction. The two of you settle into silence as he picks at his food. You pull your phone out under the table to google, and find out that you must talk to him in a non-confrontational way, but show that you care. You decide to do just that. <skip to TELL>
-    think I weird: during recess, you watch as he picks out little bites from his nasi lemak meal. yeah, something is definitely wrong, but you're not sure what. you decide to google his signs, but it returns the usual stress symptoms. Then, he asks you if you have 40 bucks... 
+    _approach:_ during recess, you ask him if he is okay, explaining that you have been noticing that he looks stressed recently. He fervently denies being stressed, and seems to take it like an insult. You're taken aback. How can you help him? (Calm him down & tell him that you're worried about how he seems fidgety all day/Calm down & google for help)
+         _Tell:_ You place your hand on his shoulder, trying to comfort him and say that you care about his mental health. You say that you're worried about how he seems fidgety all day. You ask if he needs help with something and if there's anything bothering him.
+         _Google:_ You try to calm down after the reaction. The two of you settle into silence as he picks at his food. You pull your phone out under the table to google, and find out that you must talk to him in a non-confrontational way, but show that you care. You decide to do just that. <skip to TELL>
+    _think I weird:_ during recess, you watch as he picks out little bites from his nasi lemak meal. yeah, something is definitely wrong, but you're not sure what. you decide to google his signs, but it returns the usual stress symptoms. Then, he asks you if you have 40 bucks... 
 5.
 Y:  Should you steal or borrow the money? (steal/borrow)
-     Steal: you try to steal from your mom and got caught. oops. now your entire plan is exposed as she found a paper note from Bob about the meetup, while digging through your belongings. Your mom and you start arguing and you are skyhigh-stressed as you find no way out.
-     Borrow: You try to ask Zaniah, your bestie, during recess, to borrow 40 bucks. Obviously, that is stupid since it is a large amount of money at once, which you had never asked for. She confronts you about your need for money.
+     _Steal_: you try to steal from your mom and got caught. oops. now your entire plan is exposed as she found a paper note from Bob about the meetup, while digging through your belongings. Your mom and you start arguing and you are skyhigh-stressed as you find no way out.
+     _Borrow_ You try to ask Zaniah, your bestie, during recess, to borrow 40 bucks. Obviously, that is stupid since it is a large amount of money at once, which you had never asked for. She confronts you about your need for money.
 N: 
  "Approach/TELL": He stares at you for a while, then shakes his head rapidly. "It's just.. It's... I need 40 bucks because I owe someone this amount for buying a game item. You know...the one I spent on the FruitBlox upgrade... Yeah that money wasn't actually mine."
  "think i weird": Naturally, you ask him why, as it is a big amount of money. <skip above to Approach/TELL>
 6.
 Y:
  Steal: You and your mom have a major fallout, and she threatens to call the authorities on you. Eyes wide, you also threaten her out of rage. With the kitchen knife. Then the main door opens...
- Borrow: Zaniah continues to mention that you have been seeming stressed recently, and that she is worried for you. A pang of guilt rises in your chest. Should you confess to her? (Y1/N1)
+ Borrow: Zaniah continues to mention that you have been seeming stressed recently, and that she is worried for you. A pang of guilt rises in your chest. Will you confess to her? (Y1/N1)
         Y1: You decide to confess to Zaniah about it. She stares at you with wide eyes, and your heart rate spikes... But she seems to calm down quickly, and gently tells you she'll try to help you. **<skip to HELP>**
         N1: you continue to hide the fact that you need it for vaping.  "It's just... It's... I need 40 bucks because I owe someone this amount for buying a game item. You know...the one I spent on the FruitBlox powerup... Yeah that money wasn't actually mine," you say.
 N: <approach/TELL />
@@ -111,7 +111,7 @@ Y:
 Y: 
      steal y: instead, your mother shouts at your dad, revealing the truth that you have been vaping.  you silently nod your head.
      steal n: to your surprise, your dad hugs you.
-borrow n1: guilt quickly overwhelms you as you are aware you have been hiding the fact that you vape from the people truly closest to you.
+borrow N1: guilt quickly overwhelms you as you are aware you have been hiding the fact that you vape from the people truly closest to you.
 
 10.
 Y:
@@ -130,14 +130,14 @@ Borrow n1:
     y: "it's...vape," you manage to croak out.
     n: as if she can read your mind, she assures you that there is no need to fear anyone else's reaction. Coming clean now is better than leaving it for later, she says. tell her? <Y1/N1>
         Y1: <skip to 11borrow-n1-y>
-        N1: you eventually refuse to tell her, leaving her in the dark... the bell rings and recess passes. you think to choose another path to get the 40bucks. (rechoose/steal) 
+        N1: you eventually refuse to tell her, leaving her in the dark... the bell rings and recess passes. stressing out, you think to choose another path to get the 40bucks. (rechoose/steal) 
             <rechoose: skip to 12borrow-n1-n> 
-            <steal: skip to 5YSteal>
+            <steal: skip to 5Y-Steal>
 13.
-Borrow n1-y: To your surprise, zaniah doesn't blame you. conversely, she acts encouraging and assures you that even though vaping is wrong, she will help you through whatever difficulties you will face in life and also help you get out of substance abuse. It will be a hard journey but you will get through it. **<skip to HELP>**
+Borrow n1-y: To your surprise, zaniah doesn't blame you. Instead, she acts encouraging and assures you that even though vaping is wrong, she will help you through whatever difficulties you will face in life and also help you get out of substance abuse. It will be a hard journey but you will get through it. **<skip to HELP>**
 ### HELP
 1. 
-_6Y-Borrow-Y1 ("i.e. you directly confess to zaniah"):_ Zaniah she acts encouraging and assures you that even though vaping is wrong, she will help you through whatever difficulties you will face and help you get out of substance abuse. (continues)
+[DONE]_6Y-Borrow-Y1 ("i.e. you directly confess to zaniah"):_ Zaniah acts encouraging and assures you that even though vaping is wrong, she will help you through whatever difficulties you will face and help you get out of substance abuse. (continues)
     A weight feels lifted off your chest... You're unsure, but slightly comforted by the fact that at least Zaniah is behind you.(continues)
 
     Zaniah helps you draw up a quit plan. She also explains to you more about vapes and their harms, showing you the various help pathways... [END]
@@ -153,6 +153,6 @@ _7N-isthatthetruth:_ now that he has revealed to you that he has been vaping, yo
             congrats! you have successfully encouraged your friend to quit vaping, and found him resources. <continues> later, you support him during his recovery process. it was a tough journey as he suffers from withdrawal symptoms, but luckily you were there to remind him about his end goals and quit plan. <continues> months later, he becomes a much more cheerful person. You both have also stopped mixing with Bob, Janine and the friend group (in fact they got into trouble soon after your friend starts his recovery process). <continues> Thank you for playing the game!
             [END]
     mad: he pauses, shocked. with a half-stifled cry, he hisses that he revealed to you something that made him so vulnerable, but that you will not be there to help him through. he leaves with tears in his eyes, and you never see him come back to class after recess... [continues](you failed. try again.) <rechoose "7N-you.are.internally.surprised">
-_11Y-Steal:_ You stare at your dad in slight disbelief. Still, a weight feels lifted off your chest. With your dad's help, you drew up a quit plan. He also explains to you more about vapes and their harms, showing you the various official hotlines and help pathways...[END]
-_13Y-Borrow-n1-y:_ A weight feels lifted off your chest. With Zaniah's help, you drew a quit plan. She also explains to you more about vapes and their harms, showing you the various official hotlines and help pathways...
+[DONE]_11Y-Steal:_ You stare at your dad in slight disbelief. Still, a weight feels lifted off your chest. With your dad's help, you drew up a quit plan. He also explains to you more about vapes and their harms, showing you the various official hotlines and help pathways...[END]
+[DONE]_13Y-Borrow-N1-y:_ A weight feels lifted off your chest. With Zaniah's help, you drew a quit plan. She also explains to you more about vapes and their harms, showing you the various official hotlines and help pathways...
 [END]
