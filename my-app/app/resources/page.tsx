@@ -128,7 +128,7 @@ function ExpandableCardDemo() {
         ) : null}
       </AnimatePresence>
       {result && (
-        <div className="max-w-2xl mx-auto w-full gap-4 mb-6">
+        <div className="max-w-2xl mx-auto w-full gap-4 mb-6 mt-6">
           {result === "goodEnd" ? (
             <>
               <h1 className="text-2xl font-bold">
@@ -151,7 +151,7 @@ function ExpandableCardDemo() {
         </div>
       )}
 
-      <ul className="max-w-2xl mx-auto w-full gap-4">
+      <ul className="max-w-2xl mx-auto w-full gap-4 mb-4">
         {cards.map((card) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
