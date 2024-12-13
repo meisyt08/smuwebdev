@@ -342,7 +342,7 @@ const cards = [
   {
     description: "Hotline: 1800-283-7019",
     title: "Singapore Association for Mental Health (SAMH)",
-    src: "/SAMH logo.PNG",
+    src: "/SAMH logo.png",
     ctaText: "Learn More",
     ctaLink: "https://www.samhealth.org.sg/",
     content: () => {
