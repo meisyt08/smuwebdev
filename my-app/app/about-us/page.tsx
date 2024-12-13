@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
+import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 
 const AnimatedTestimonials = dynamic(
   () =>
@@ -17,31 +18,72 @@ const AnimatedTestimonials = dynamic(
 );
 
 export default function AboutUs() {
-  const testimonials = [
+  const content = [
     {
-      quote: '"I don\'t know. Play Moomoo.io."',
-      name: "Jayden",
-      designation: "Absolute Beast of a Gamer",
-      src: "/jayden.jpg",
+      title: "Jayden",
+      subheader: "Absolute Beast of a Gamer",
+      description: '"I don\'t know. Play Moomoo.io."',
+      content: (
+        <div className="h-full w-full  flex items-center justify-center text-white">
+          <Image
+            src="/jayden.jpg"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="linear board demo"
+          />
+        </div>
+      ),
     },
     {
-      quote: '"My favourite hobby\'s prolly getting rich."',
-      name: "Yu Ting",
-      designation: "Professional TTS Generator, Part-time Yapper/Innovator",
-      src: "/yuting.jpg",
+      title: "Yu Ting",
+      subheader: "Professional TTS Generator, Part-time Yapper/Innovator",
+      description: '"My favourite hobby\'s prolly getting rich."',
+      content: (
+        <div className="h-full w-full  flex items-center justify-center text-white">
+          <Image
+            src="/yuting.jpg"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="linear board demo"
+          />
+        </div>
+      ),
     },
     {
-      quote: '"Ask for money, get advice. Ask for advice, get money twice."',
-      name: "Javen",
-      designation: "Pitbull Lover / Pitbull's Lover",
-      src: "/javen.jpeg",
+      title: "Javen",
+      subheader: "Pitbull Lover / Pitbull's Lover",
+      description:
+        '"Ask for money, get advice. Ask for advice, get money twice."',
+      content: (
+        <div className="h-full w-full  flex items-center justify-center text-white">
+          <Image
+            src="/javen.jpeg"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="linear board demo"
+          />
+        </div>
+      ),
     },
     {
-      quote:
+      title: "Ivyn",
+      subheader: "What The Cup Fan",
+      description:
         '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
-      name: "Ivyn",
-      designation: "What The Cup Fan",
-      src: "/ivyn.jpeg",
+      content: (
+        <div className="h-full w-full  flex items-center justify-center text-white">
+          <Image
+            src="/ivyn.jpeg"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="linear board demo"
+          />
+        </div>
+      ),
     },
   ];
 
@@ -163,27 +205,11 @@ export default function AboutUs() {
           </div>
         </section>
         <section id="about" className="mb-12">
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="flex flex-col md:w-1/2">
-              <h2 className="text-2xl font-semibold mb-4 text-purple-600 dark:text-purple-400">
-                Who are we?
-              </h2>
-              <p className="text-lg">
-                We are a group of passionate individuals united by a common
-                mission: to help people identify and address the challenges of
-                drug addiction. With deep empathy and a commitment to making a
-                positive impact, we dedicate ourselves to raising awareness
-                about the signs and dangers of addiction. Our goal is to offer
-                support, guidance, and resources to those struggling, empowering
-                them to take the first steps toward recovery. Through education,
-                compassion, and community collaboration, we strive to create a
-                world where no one has to face addiction alone, and everyone has
-                the opportunity to lead a healthier, happier life.
-              </p>
-            </div>
-            <div className="md:w-1/2">
-              <AnimatedTestimonials testimonials={testimonials} />
-            </div>
+          <div className="flex flex-col md:flex-col gap-8">
+            <h2 className="text-2xl text-center font-semibold mb-4 text-purple-600 dark:text-purple-400">
+              Who are we?
+            </h2>
+            <StickyScroll content={content} />
           </div>
         </section>
       </main>
