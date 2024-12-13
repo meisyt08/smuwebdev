@@ -85,6 +85,22 @@ export default function AboutUs() {
         </div>
       ),
     },
+    {
+      title: "Jayden",
+      subheader: "Absolute Beast of a Gamer",
+      description: '"I don\'t know. Play Moomoo.io."',
+      content: (
+        <div className="h-full w-full  flex items-center justify-center text-white">
+          <Image
+            src="/jayden.jpg"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="linear board demo"
+          />
+        </div>
+      ),
+    },
   ];
 
   return (
@@ -182,7 +198,7 @@ export default function AboutUs() {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
               <Image
-                src="/jayden.jpg"
+                src="/support.jpg"
                 alt="Support group meeting"
                 width={400}
                 height={300}
@@ -205,7 +221,7 @@ export default function AboutUs() {
           </div>
         </section>
         <section id="about" className="mb-12">
-          <div className="flex flex-col md:flex-col gap-8">
+          <div className="flex flex-col">
             <h2 className="text-2xl text-center font-semibold mb-4 text-purple-600 dark:text-purple-400">
               Who are we?
             </h2>
