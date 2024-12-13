@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { SubscribeForm } from "./SubscribeForm";
 
 export function Footer() {
   return (
@@ -34,11 +35,11 @@ export function Footer() {
             <p className="mb-4">
               Get updates on our latest resources and support information.
             </p>
-            <Button className="w-full">Subscribe</Button>
+            <SubscribeForm/>
           </div>
         </div>
         <div className="mt-8 border-t border-gray-800 pt-8 text-center">
-          <p>&copy; 2024 DrugAware. All rights reserved.</p>
+          <p>&copy; 2024 TuttiFrutti. All rights reserved.</p>
         </div>
       </div>
     </footer>
