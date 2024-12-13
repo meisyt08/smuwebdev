@@ -202,6 +202,7 @@ export default function PageWrapper() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <ExpandableCardDemo />
+      {/* <div className="w-10 bg-inherit"></div> */}
       <Footer />
     </Suspense>
   );
