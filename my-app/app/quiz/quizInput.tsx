@@ -377,7 +377,7 @@ export const quizInput: Record<
       "Maybe he's lying...? What do you do?",
     choices: {
      "Blame him for lying and be mad at him": "partII_7N_blame",
-     "is that the truth? you can tell me, you know, I'm your best friend and I'll help you no matter what": "partII_7N_safe",
+     "You can tell me, I'll help you no matter what": "partII_7N_safe",
     },
     image: "/1.png",
   },
@@ -583,8 +583,8 @@ export const quizInput: Record<
     question: 
     "You are internally surprised and disbelieving that he will vape. However, now that he has gotten into this situation, how should you help?",
     choices: {
-      "calm down, urge him to quit": "end_7N_isthatthetruth_1calm",
-      "get mad that he is doing something illegal, say he will get caught": "end_7N_isthatthetruth_1mad"
+      "Calm down, urge him to quit": "end_7N_isthatthetruth_1calm",
+      "Get mad": "end_7N_isthatthetruth_1mad"
     },
     image: "/1.png",
   },
@@ -610,7 +610,7 @@ export const quizInput: Record<
     "He stares at you wide eyed, but breathes out an okay, then quickly averts his eyes.",
     choices: {
       "Come up with quit plan together": "end_7N_isthatthetruth_1calm2_quit",
-      "encourage him to read up on quit journey's, give hope": "end_7N_isthatthetruth_1calm2_hope"
+      "Encourage him to read up on quit journey's, give hope": "end_7N_isthatthetruth_1calm2_hope"
     },
     image: "/1.png",
   },
