@@ -163,11 +163,27 @@ export default function AboutUs() {
           </div>
         </section>
         <section id="about" className="mb-12">
-          <div className="flex flex-row">
-            <h2 className="text-2xl font-semibold mb-4 text-purple-600 dark:text-purple-400">
-              Who are we?
-            </h2>
-            <AnimatedTestimonials testimonials={testimonials} />
+          <div className="flex flex-col md:flex-row gap-8">
+            <div className="flex flex-col md:w-1/2">
+              <h2 className="text-2xl font-semibold mb-4 text-purple-600 dark:text-purple-400">
+                Who are we?
+              </h2>
+              <p className="text-lg">
+                We are a group of passionate individuals united by a common
+                mission: to help people identify and address the challenges of
+                drug addiction. With deep empathy and a commitment to making a
+                positive impact, we dedicate ourselves to raising awareness
+                about the signs and dangers of addiction. Our goal is to offer
+                support, guidance, and resources to those struggling, empowering
+                them to take the first steps toward recovery. Through education,
+                compassion, and community collaboration, we strive to create a
+                world where no one has to face addiction alone, and everyone has
+                the opportunity to lead a healthier, happier life.
+              </p>
+            </div>
+            <div className="md:w-1/2">
+              <AnimatedTestimonials testimonials={testimonials} />
+            </div>
           </div>
         </section>
       </main>
