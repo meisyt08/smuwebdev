@@ -89,7 +89,7 @@ Y:
         Y1: You decide to confess to Zaniah about it. She stares at you with wide eyes, and your heart rate spikes... But she seems to calm down quickly, and gently tells you she'll try to help you. **<skip to HELP>**
         N1: you continue to hide the fact that you need it for vaping.  "It's just... It's... I need 40 bucks because I owe someone this amount for buying a game item. You know...the one I spent on the FruitBlox powerup... Yeah that money wasn't actually mine," you say.
 N: <approach/TELL />
-   You're surprised, as you were literally playing that game with him when he bought the powerup using money from his bank account, and it costs less than 40bucks. You also don't have 40 bucks ready to lend to him. Plus, you know he was never the type of person to borrow this much from others and then spend it frivolously. (Gently ask who he borrowed from/Act shocked and demand why he never told you)
+   You're surprised, as you were literally playing that game with him when he bought the powerup using money from his bank account, and it costs less than 40buks. You also don't have 40 bucks ready to lend to him. Plus, you know he was never the type of person to borrow this much from others and then spend it frivolously. (Gently ask who he borrowed from/Act shocked and demand why he never told you)
     > "gently ask": he stammers and averts his eyes, mumbling a name you have never heard before. his body language is suspicious.
     > "Act shocked": bro you're supposed to focus on your end goal of helping *him*, not questioning him confrontationally about why *you* don't already know certain things. try again. <skip above to N>
 7. 

@@ -253,8 +253,8 @@ export const quizInput: Record<
     question:
       "During recess, you ask him if he is okay, explaining that you have been noticing that he looks stressed recently. He fervently denies being stressed, and seems to take it like an insult. You're taken aback. How can you help him?",
     choices: {
-      "Tell him you're worried for him": "partII_5N_tell",
-      "Google for help": "partII_5N_google",
+      "Tell him you're worried for him": "partII_4N_tell",
+      "Google for help": "partII_4N_google",
     },
     image: "/1.png",
   },
@@ -263,6 +263,22 @@ export const quizInput: Record<
       "During recess, you watch as he picks out little bites from his nasi lemak meal. Yeah, something is definitely wrong, but you're not sure what. You decide to google his signs, but it returns the usual stress symptoms. Then, he asks you if you have 40 bucks...",
     choices: {
       Continue: "partII_5N_weird",
+    },
+    image: "/1.png",
+  },
+  partII_4N_tell: {
+    question:
+      "You place your hand on his shoulder, trying to comfort him and say that you care about his mental health. You say that you're worried about how he seems fidgety all day. You ask if he needs help with something and if there's anything bothering him.",
+    choices: {
+      Continue: "partII_5N_approach",
+    },
+    image: "/1.png",
+  },
+  partII_4N_google: {
+    question:
+      "You try to calm down after the reaction. The two of you settle into silence as he picks at his food. You pull your phone out under the table to google, and find out that you must talk to him in a non-confrontational way, but show that you care. You decide to do just that.",
+    choices: {
+      Continue: "partII_4N_tell",
     },
     image: "/1.png",
   },
@@ -286,32 +302,32 @@ export const quizInput: Record<
     question:
       "Naturally, you ask him why, as it is a big amount of money.",
     choices: {
-      Continue: "partII_5N",
+      Continue: "partII_5N_approach",
     },
     image: "/1.png",
   },
-  partII_5N_tell: {
-    question:
-      "You place your hand on his shoulder, trying to comfort him and say that you care about his mental health. You say that you're worried about how he seems fidgety all day. You ask if he needs help with something and if there's anything bothering him.",
-    choices: {
-      Continue: "partII_5N",
-    },
-    image: "/1.png",
-  },
-  partII_5N_google: {
-    question:
-      "You try to calm down after the reaction. The two of you settle into silence as he picks at his food. You pull your phone out under the table to google, and find out that you must talk to him in a non-confrontational way, but show that you care. You decide to do just that.",
-    choices: {
-      Continue: "partII_5N_tell",
-    },
-    image: "/1.png",
-  },
-  partII_5N: {
+  partII_5N_approach: {
     question:
       "He stares at you for a while, then shakes his head rapidly. \"It's just.. It's... I need 40 bucks because I owe someone this amount for buying a game item. You know...the one I spent on the FruitBlox upgrade... Yeah that money wasn't actually mine.\"",
     choices: {
-      "Gently ask who he borrowed from": "partII_7N_gently",
-      "Act shocked and ask why he never told you": "partII_7N_shocked",
+      Continue: "partII_6N_approach"
+    },
+    image: "/1.png",
+  },
+  partII_6N_approach: {
+    question:
+      "You're surprised, as you were literally playing that game with him when he bought the powerup using money from his bank account, and it costs less than 40bucks. You also don't have 40 bucks ready to lend to him. Plus, you know he was never the type of person to borrow this much from others and then spend it frivolously.",
+    choices: {
+      "Gently ask who lent him":"partII_6N_appr_gently",
+      "Demand why he nv tell u":"partII_6N_appr_demand",
+    },
+    image: "/1.png",
+  },
+  partII_6N_appr_demand: {
+    question:
+      "He stammers out something incoherent, then says nevermind. More probing doesn't get him to reveal anything more :( You're supposed to focus on your end goal of helping him, not questioning him confrontationally about why you don't already know certain things. Try again.",
+    choices: {
+      "Try again": "partII_6N_appr_gently",
     },
     image: "/1.png",
   },
@@ -348,6 +364,39 @@ export const quizInput: Record<
     },
     image: "/1.png",
   },
+  partII_6N_appr_gently: {
+    question:
+      "He stammers and averts his eyes, mumbling a name you have never heard before. His body language is suspicious.",
+    choices: {
+      Continue: "partII_7N"
+    },
+    image: "/1.png",
+  },
+  partII_7N: {
+    question:
+      "Maybe he's lying...? What do you do?",
+    choices: {
+     "Blame him for lying and be mad at him": "partII_7N_blame",
+     "is that the truth? you can tell me, you know, I'm your best friend and I'll help you no matter what": "partII_7N_safe",
+    },
+    image: "/1.png",
+  },
+  partII_7N_blame: {
+    question:
+      "Your friend gets defensive and blames you for being someone he can't trust. Your friendship breaks down lol, try again.",
+    choices: {
+     "Try again": "partII_7N"
+    },
+    image: "/1.png",
+  },
+  partII_7N_safe: {
+    question:
+      "You try to create a safe space. it took some nudging, and convincing that you truly want the best for him. Your friend sounds unsure, but something takes over him. Tears overwhelm his eyes as he reveals that he has been vaping.",
+    choices: {
+     "Continue": "end_7N_isthatthetruth"
+    },
+    image: "/1.png",
+  },
   partII_7Y_borrow_N1: {
     question:
       "Your friend still looks skeptical. She asks you who you borrowed it from. You stammer something out, because it's a lie that you didn't completely think through.",
@@ -364,26 +413,10 @@ export const quizInput: Record<
     },
     image: "/1.png",
   },
-  partII_7N_gently: {
-    question:
-      "He stammers and averts his eyes, mumbling a name you have never heard before. You start to realise he might be lying. What do you do?",
-    choices: {
-      "Directly call out the fact that he is lying": "end_confront",
-      "Offer to help him": "end_help",
-    },
-    image: "/1.png",
-  },
-  partII_7N_shocked: {
-    question:
-      "Bro you're supposed to focus on your end goal of helping him, not questioning him confrontationally about why you don't already know certain things. Try again.",
-    choices: {
-      "Try again": "partII_6N",
-    },
-    image: "/1.png",
-  },
+
   partII_8Y_borrow_N1: {
     question:
-      "your heart rate spikes because you know that response sucked. but a hand rests on your shoulder as she asks you if you are telling the truth.",
+      "Your heart rate spikes because you know that response sucked. But a hand rests on your shoulder as she asks you if you are telling the truth.",
     choices: {
       Continue: "partII_9Y_borrow_N1",
     },
@@ -416,7 +449,7 @@ export const quizInput: Record<
   },
   partII_9Y_borrow_N1: {
     question:
-      "guilt quickly overwhelms you as you are aware you have been hiding the fact that you vape from the people truly closest to you.",
+      "Guilt quickly overwhelms you as you are aware you have been hiding the fact that you vape from the people truly closest to you.",
     choices: {
       Continue: "partII_10Y_borrow_N1",
     },
@@ -424,7 +457,7 @@ export const quizInput: Record<
   },
   partII_9Y_steal_y: {
     question: 
-    "Instead, your mother shouts at your dad, revealing the truth that you have been vaping.  You silently nod your head.",
+    "Instead, your mother shouts at your dad, revealing the truth that you have been vaping. You silently nod your head.",
     choices: {
       continue: "partII_9Ystealn_10Ystealy_dadhug",
     },
@@ -432,7 +465,7 @@ export const quizInput: Record<
   },
   partII_9Ystealn_10Ystealy_dadhug: {
     question: 
-    "to your surprise, your dad hugs you.",
+    "To your surprise, your dad hugs you.",
     choices: {
       continue: "partII_11Y_steal",
     },
@@ -440,7 +473,7 @@ export const quizInput: Record<
   },
   partII_10Y_borrow_N1: {
     question:
-      "zaniah assures you once again that she will be there no matter what, and that you can be honest with her. will you tell her?",
+      "Zaniah assures you once again that she will be there no matter what, and that you can be honest with her. Will you tell her?",
     choices: {
       Yes: "partII_11Y_borrow_N1_y",
       No: "partII_11Y_borrow_N1_n",
@@ -457,7 +490,7 @@ export const quizInput: Record<
   },
   partII_11Y_borrow_N1_y: {
     question:
-      "you inhale. your throat feels tight. you open your mouth but nothing comes out. it's hard. but she nods at you encouragingly...",
+      "You inhale. Your throat feels tight. You open your mouth but nothing comes out. It's hard, but she nods at you encouragingly...",
     choices: {
       Continue: "partII_12Y_borrow_N1_y",
     },
@@ -465,7 +498,7 @@ export const quizInput: Record<
   },
   partII_11Y_borrow_N1_n: {
     question:
-      "you are scared to tell her the truth, for fear that she will be truly disappointed in you. you can't bear to face her directly.",
+      "You are scared to tell her the truth, for fear that she will be truly disappointed in you. You can't bear to face her directly.",
     choices: {
       Continue: "partII_12Y_borrow_N1_n",
     },
@@ -473,7 +506,7 @@ export const quizInput: Record<
   },
   partII_11Y_borrow_N1_n_N1: {
     question:
-      "you eventually refuse to tell her, leaving her in the dark... the bell rings and recess passes. stressing out, you think to choose another path to get the 40bucks.",
+      "You eventually refuse to tell her, leaving her in the dark... The bell rings and recess passes. Stressing out, you think to choose another path to get the 40bucks.",
     choices: {
       Rechoose: "partII_12Y_borrow_N1_n",
       Steal: "partII_5Y_steal"
@@ -482,7 +515,7 @@ export const quizInput: Record<
   },
   partII_12Y_borrow_N1_y: {
     question:
-      "\"it's...vape,\" you manage to croak out.",
+      "\"It's...vape,\" you manage to croak out.",
     choices: {
       Continue: "partII_13Y_borrow_N1_y",
     },
@@ -490,7 +523,7 @@ export const quizInput: Record<
   },
   partII_12Y_borrow_N1_n: {
     question:
-      "as if she can read your mind, she assures you that there is no need to fear anyone else's reaction. Coming clean now is better than leaving it for later, she says. tell her?",
+      "As if she can read your mind, she assures you that there is no need to fear anyone else's reaction. Coming clean now is better than leaving it for later, she says. Tell her?",
     choices: {
       Yes: "partII_11Y_borrow_N1_y",
       No: "partII_11Y_borrow_N1_n_N1"
@@ -538,39 +571,98 @@ export const quizInput: Record<
     },
     image: "/1.png",
   },
-//   end_confess: {
-//     question:
-//       "You confess everything to your dad. He's disappointed but grateful you told the truth. He helps you get support and counseling to overcome your addiction.",
-//     choices: {
-//       Continue: "good_end",
-//     },
-//     image: "/1.png",
-//   },
-//   end_arrested: {
-//     question:
-//       "You refuse to tell your dad what's going on. The situation escalates, and the authorities are called. You face serious consequences for your actions.",
-//     choices: {
-//       Continue: "bad_end",
-//     },
-//     image: "/1.png",
-//   },
+  end_7N_isthatthetruth: {
+    question: 
+    "Now that he has revealed to you that he has been vaping, your task is to help him quit.",
+    choices: {
+      continue: "end_7N_isthatthetruth_1",
+    },
+    image: "/1.png",
+  },
+  end_7N_isthatthetruth_1: {
+    question: 
+    "You are internally surprised and disbelieving that he will vape. However, now that he has gotten into this situation, how should you help?",
+    choices: {
+      "calm down, urge him to quit": "end_7N_isthatthetruth_1calm",
+      "get mad that he is doing something illegal, say he will get caught": "end_7N_isthatthetruth_1mad"
+    },
+    image: "/1.png",
+  },
+  end_7N_isthatthetruth_1mad: {
+    question: 
+    "He pauses, shocked. He hisses that you betrayed him, as he revealed to you something that made him so vulnerable, but that you will not be there to help him. He leaves with tears in his eyes, and you never see him come back to class after recess...",
+    choices: {
+     "You failed. Try again.": "end_7N_isthatthetruth_1",
+    },
+    image: "/1.png",
+  },
+  //calm (to do mad)
+  end_7N_isthatthetruth_1calm: {
+    question: 
+    "You give him a side hug, and start assuring him that even though vaping is wrong, you will help him through whatever difficulties he will face and help him get out of substance abuse.",
+    choices: {
+      Continue: "end_7N_isthatthetruth_1calm2"
+    },
+    image: "/1.png",
+  },
+  end_7N_isthatthetruth_1calm2: {
+    question: 
+    "He stares at you wide eyed, but breathes out an okay, then quickly averts his eyes.",
+    choices: {
+      "Come up with quit plan together": "end_7N_isthatthetruth_1calm2_quit",
+      "encourage him to read up on quit journey's, give hope": "end_7N_isthatthetruth_1calm2_hope"
+    },
+    image: "/1.png",
+  },
+  end_7N_isthatthetruth_1calm2_quit: {
+    question: 
+    "Both of you drew up a quit plan together. You also explain to him more about vapes and their harms, showing him the various official hotlines and help pathways...",
+    choices: {
+      Continue: "end_7N_isthatthetruth_1calm2_quithope2"
+    },
+    image: "/1.png",
+  },
+  end_7N_isthatthetruth_1calm2_hope: {
+    question: 
+    "You encourage him to read more about the quit journeys of others, and show him that it's possible to get out of vaping. You both find resources from google to help him, and realise you can call quit helplines to get help from quit coaches. So you do so... ",
+    choices: {
+      Continue: "end_7N_isthatthetruth_1calm2_quithope2"
+    },
+    image: "/1.png",
+  },
+  end_7N_isthatthetruth_1calm2_quithope2: {
+    question: 
+    "Congrats! You have successfully encouraged your friend to quit vaping, and found him resources.",
+    choices: {
+      Continue: "end_7N_isthatthetruth_2"
+    },
+    image: "/1.png",
+  },
+  end_7N_isthatthetruth_2: {
+    question: 
+    "Later, you support him during his recovery process. It was a tough journey as he suffers from withdrawal symptoms, but luckily you were there to remind him about his end goals and quit plan.",
+    choices: {
+      Continue: "end_7N_isthatthetruth_3"
+    },
+    image: "/1.png",
+  },
+  end_7N_isthatthetruth_3: {
+    question: 
+    "Months later, he becomes a much more cheerful person. You both have also stopped mixing with Bob, Janine and the friend group (in fact they got into trouble soon after your friend starts his recovery process).",
+    choices: {
+      Continue: "end_7N_isthatthetruth_4"
+    },
+    image: "/1.png",
+  },
+  end_7N_isthatthetruth_4: {
+    question: 
+    "Thank you for playing the game!",
+    choices: {
+      Continue: "good_end"
+    },
+    image: "/1.png",
+  },
   
-//   end_suspicious: {
-//     question:
-//       "Your friend looks skeptical. She asks you who you borrowed it from. You stammer something out, because it's a lie that you didn't completely think through. Zaniah's suspicion grows, and she decides to talk to your parents about her concerns.",
-//     choices: {
-//       Continue: "bad_end",
-//     },
-//     image: "/1.png",
-//   },
-//   end_confront: {
-//     question:
-//       "You confront your friend about his lie. He breaks down and admits he's been struggling with a vaping addiction. You offer your support and help him seek professional assistance.",
-//     choices: {
-//       Continue: "good_end",
-//     },
-//     image: "/1.png",
-//   },
   good_end: {
     question: "Loading Results...",
     choices: {},
