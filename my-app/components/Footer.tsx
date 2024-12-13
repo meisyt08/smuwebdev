@@ -4,34 +4,35 @@ import { Button } from "@/components/ui/button";
 export function Footer() {
   return (
     <footer className="bg-gray-900 dark:bg-gray-950 py-12 text-gray-300">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-20">
         <div className="grid gap-8 md:grid-cols-4">
           <div>
             <h3 className="mb-4 text-lg font-semibold text-white">Emergency</h3>
             <p className="text-2xl font-bold text-purple-400">1-800-123-4567</p>
           </div>
           <FooterLinks
-            title="Resources"
+            title="Quick Links"
             links={[
-              { href: "#", text: "Find Help" },
-              { href: "#", text: "Prevention Guide" },
-              { href: "#", text: "Support Groups" },
+              { href: "/about-us", text: "About Us" },
+              { href: "/resources", text: "Resources" },
+              { href: "/start-page", text: "Interactive Game" },
             ]}
           />
           <FooterLinks
-            title="Information"
+            title="Support"
             links={[
-              { href: "#", text: "About Us" },
-              { href: "#", text: "Contact" },
-              { href: "#", text: "Privacy Policy" },
+              { href: "/about-us#mission", text: "Our Mission" },
+              { href: "/about-us#understand", text: "Understand Addiction" },
+              { href: "/about-us#help", text: "Support Groups" },
+              { href: "/about-us#about", text: "Who are We?" },
             ]}
           />
           <div>
             <h3 className="mb-4 text-lg font-semibold text-white">
-              Newsletter
+              Stay Informed
             </h3>
             <p className="mb-4">
-              Stay updated with our latest resources and support information.
+              Get updates on our latest resources and support information.
             </p>
             <Button className="w-full">Subscribe</Button>
           </div>
@@ -54,7 +55,7 @@ interface FooterLinksProps {
   links: Link[];
 }
 
-function FooterLinks({ title, links } : FooterLinksProps) {
+function FooterLinks({ title, links }: FooterLinksProps) {
   return (
     <div>
       <h3 className="mb-4 text-lg font-semibold text-white">{title}</h3>

@@ -28,7 +28,7 @@ export function NavigationBar() {
     >
       <div className="flex items-center space-x-2">
         <NavigationMenuItem>
-          <Link href="/landing" legacyBehavior passHref>
+          <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink
               className={`${
                 isSpecificPage ? "text-white" : ""
@@ -42,7 +42,7 @@ export function NavigationBar() {
       </div>
       <div className="flex flex-row">
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href="/about-us" legacyBehavior passHref>
             <NavigationMenuLink
               className={`${navigationMenuTriggerStyle()} ${
                 isSpecificPage ? "text-white" : ""
