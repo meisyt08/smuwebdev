@@ -538,6 +538,48 @@ export const quizInput: Record<
     },
     image: "/1.png",
   },
+//13Y end
+    end_13Y_borrow_N1_y: {
+    question:
+      "A weight feels lifted off your chest... You're unsure, but slightly comforted by the fact that at least Zaniah is behind you.",
+    choices: {
+      Continue: "end_13Y_borrow_N1_y_1",
+    },
+    image: "/1.png",
+  },
+   end_13Y_borrow_N1_y_1: {
+    question:
+      "Zaniah helps you draw up a quit plan. She also explains to you more about vapes and their harms, showing you the various help pathways...",
+    choices: {
+      Continue: "end_13Y_borrow_N1_y_2",
+    },
+    image: "/1.png",
+  },
+    end_13Y_borrow_N1_y_2: {
+    question: 
+    "Later, she supports you during your recovery process. It was a tough journey as you suffer from withdrawal symptoms, but luckily she was there to remind you about your end goals and quit plan.",
+    choices: {
+      Continue: "end_13Y_borrow_N1_y_3"
+    },
+    image: "/1.png",
+  },
+    end_13Y_borrow_N1_y_3: {
+    question: 
+    "A year later, you become a much more cheerful person. You have also stopped mixing with Bob, Janine and the friend group (in fact they got into trouble soon after you started your recovery process).",
+    choices: {
+      Continue: "end_13Y_borrow_N1_y_4"
+    },
+    image: "/1.png",
+  },
+   end_13Y_borrow_N1_y_4: {
+    question: 
+    "Congrats for being able to quit vaping! Thank you for playing the game!",
+    choices: {
+      Continue: "bad_end"
+    },
+    image: "/1.png",
+  },
+
 //end
   end_6Y_Borrow_Y1: {
     question:
@@ -648,7 +690,7 @@ export const quizInput: Record<
   },
   end_7N_isthatthetruth_3: {
     question: 
-    "Months later, he becomes a much more cheerful person. You both have also stopped mixing with Bob, Janine and the friend group (in fact they got into trouble soon after your friend starts his recovery process).",
+    "A year later, he becomes a much more cheerful person. You both have also stopped mixing with Bob, Janine and the friend group (in fact they got into trouble soon after your friend starts his recovery process).",
     choices: {
       Continue: "end_7N_isthatthetruth_4"
     },
